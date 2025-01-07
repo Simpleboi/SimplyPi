@@ -1,0 +1,45 @@
+@use "sass:math";
+
+// For aligning items center
+@mixin flexbox-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+// Color Pallete 
+$primary-color: #2ecc71;
+$accent-color: #3498db;
+$secondary-accent: #2980b9;
+$neutral: #ffffff;
+$text-color: #2c3e50;
+
+
+// Alignment
+$borderRad: 10px;
+$boxShadow: 0px 4px 20px -10px rgba(0, 0, 0, 0.6);
+
+// Breakpoints 
+$small-mobile: 375px;
+$mobile: 468px;
+$mobile-lg: 600px;
+$tablet: 768px;
+$large-tablet: 950px;
+$laptop: 1024px;
+$large-laptop: 1200px;
+
+
+// Px to Rem converter function
+$base-root-size: 16px;
+@function pxToRem($px) {
+    @return math.div($px, $base-root-size) * 1rem; 
+}
+
+
+// The Primary color should be used for buttons, highlights, or imporant elements. 
+
+// The accent color is ideal for links, headers, or secondary element. 
+
+// The secondary accent color for hover states, border, or emphasis
+
+// text-color is sued for text, constrasting well with white backgrounds. 
