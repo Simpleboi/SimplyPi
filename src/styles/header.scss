@@ -12,7 +12,6 @@ header {
     radial-gradient(#2d6a4f 0.75px, #ffffff 0.75px);
   background-size: 30px 30px;
   background-position: 0 0, 15px 15px;
-  border: 1px solid red;
 
   .info {
     // border: 1px solid red;
@@ -33,7 +32,7 @@ header {
       //   border: 1px solid red;
 
       span {
-        color: p.$accent-color;
+        color: p.$primary;
       }
     }
   }
@@ -51,15 +50,16 @@ header {
       font-size: 1rem;
       color: #fff;
       cursor: pointer;
-      background-color: p.$accent-color;
+      background-color: p.$primary-light;
     }
 
     .see-courses:hover {
-      background-color: p.$secondary-accent;
+      background-color: p.$primary;
+      transition: all 0.25s ease;
     }
 
     .help {
-      background-color: p.$text-color;
+      background-color: p.$text-primary;
     }
   }
 
@@ -67,7 +67,6 @@ header {
     position: relative;
     width: clamp(p.rem(100px), 50%, p.rem(1000px));
     margin-top: p.rem(10px);
-    // border: 1px solid red;
 
     input {
       width: 100%;

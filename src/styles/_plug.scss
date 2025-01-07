@@ -7,15 +7,54 @@
 }
 
 // Color Pallete 
-$primary-color: #2ecc71;
-$accent-color: #3498db;
-$secondary-accent: #2980b9;
-$neutral: #ffffff;
-$text-color: #2c3e50;
+$primary: #3498db;
+$primary-light: #5dade2;
+$primary-dark: #2471a3; 
+
+$secondary: #2980b9; 
+$secondary-light: #5499c7;
+$secondary-dark: #1f618d; 
+
+$neutral-light: #f4f4f4;
+$neutral-medium: #dcdcdc;
+$neutral-dark: #7f8c8d; 
+
+$success: #27ae60; 
+$success-light: #2ecc71;
+$error: #e74c3c; 
+$error-light: #f1948a;
+$warning: #f1c40f; 
+$warning-light: #f9e79f;
+
+$text-primary: #2c3e50; 
+$text-secondary: #34495e;
+$text-inverse: #ffffff; 
+
+// Additional Alignment Options
+$border-radius-small: 5px;
+$border-radius-medium: 10px;
+$border-radius-large: 20px;
+
+$card-padding: 20px;
+$section-padding: 40px;
+
+// Expanded Box Shadows
+$box-shadow-light: 0px 2px 10px rgba(0, 0, 0, 0.2); 
+$box-shadow-medium: 0px 4px 20px -10px rgba(0, 0, 0, 0.6); 
+$box-shadow-heavy: 0px 6px 30px rgba(0, 0, 0, 0.8); 
+
+// Additional Breakpoints
+$xxl-screen: 1400px; // For very large screens
+$desktop-hd: 1600px; // For 4K or high-res screens
+
+// Utility Colors for Gradients
+$gradient-primary: linear-gradient(90deg, $primary-light, $primary-dark);
+$gradient-secondary: linear-gradient(90deg, $secondary-light, $secondary-dark);
+$gradient-accent: linear-gradient(90deg, #818cf8, #c084fc); // Keeps SimplyPi's theme continuity
 
 
-// Alignment
-$borderRad: 10px;
+
+// Technical
 $boxShadow: 0px 4px 20px -10px rgba(0, 0, 0, 0.6);
 
 // Breakpoints 
@@ -33,11 +72,3 @@ $large-laptop: 1200px;
     @return calc($px / $base-font-size) * 1rem;
 }
 
-
-// The Primary color should be used for buttons, highlights, or imporant elements. 
-
-// The accent color is ideal for links, headers, or secondary element. 
-
-// The secondary accent color for hover states, border, or emphasis
-
-// text-color is sued for text, constrasting well with white backgrounds. 
