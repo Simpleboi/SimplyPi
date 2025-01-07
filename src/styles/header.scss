@@ -4,28 +4,33 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 100px 0;
+  padding: 7rem 0;
   text-align: center;
-  gap: 10px;
+  gap: p.rem(10px);
   opacity: 0.8;
   background-image: radial-gradient(#2d6a4f 0.75px, transparent 0.75px),
     radial-gradient(#2d6a4f 0.75px, #ffffff 0.75px);
   background-size: 30px 30px;
   background-position: 0 0, 15px 15px;
+  border: 1px solid red;
 
   .info {
+    // border: 1px solid red;
+
     h1 {
       font-weight: 700;
       background: #fff;
       font-size: 50px;
+      //   border: 1px solid red;
     }
 
     p {
       color: #666;
-      font-size: 50px;
+      font-size: p.rem(24px);
       font-weight: bold;
       margin-top: 14px;
       background-color: #fff;
+      //   border: 1px solid red;
 
       span {
         color: p.$accent-color;
@@ -35,15 +40,15 @@ header {
 
   .buttons {
     display: flex;
-    gap: 14px;
-    margin-top: 10px;
+    gap: p.rem(14px);
+    margin-top: p.rem(10px);
 
     button {
       border: none;
-      padding: 12px;
-      width: 180px;
-      border-radius: 10px;
-      font-size: 16px;
+      padding: p.rem(12px);
+      width: p.rem(180px);
+      border-radius: p.rem(10px);
+      font-size: 1rem;
       color: #fff;
       cursor: pointer;
       background-color: p.$accent-color;
@@ -60,17 +65,18 @@ header {
 
   .search-bar-header {
     position: relative;
-    width: 50px;
-    margin-top: 10px;
+    width: clamp(p.rem(100px), 50%, p.rem(1000px));
+    margin-top: p.rem(10px);
+    // border: 1px solid red;
 
     input {
       width: 100%;
-      padding: 18px 20px;
-      border-radius: 18px;
+      padding: p.rem(18px) p.rem(20px);
+      border-radius: p.rem(18px);
       box-shadow: 0px 4px 70px -10px rgba(0, 0, 0, 0.6);
       outline: none;
       border: none;
-      font-size: 14px;
+      font-size: p.rem(14px);
     }
 
     button {

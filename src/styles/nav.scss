@@ -1,0 +1,75 @@
+@use "_plug.scss" as p;
+
+nav {
+  height: 10vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 2px solid red;
+
+  .nav-wrapper-left {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    gap: p.rem(10px);
+    position: relative;
+    border: 1px solid red;
+
+    figure {
+        border: 1px solid red;
+        width: 20%;
+        @include p.flexCenter;
+    }
+
+    ul {
+        border: 1px solid blue;
+        width: 70%;
+        text-decoration: none;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+
+        li {
+            list-style: none;
+
+            a {
+                text-decoration: none;
+                font-weight: 600;
+                color: p.$text-color;
+            }
+        }
+    }
+  }
+  .nav-wrapper-right {
+    border: 1px solid red;
+    height: 100%;
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+
+    div {
+        border: 1px solid blue;
+    }
+  }
+  
+}
+
+@media screen and (max-width: p.$mobile-lg) {
+  nav {
+    .nav-wrapper-left {
+      gap: 20px;
+      width: 40%;
+      justify-content: flex-start;
+
+      .hamburger {
+        display: flex;
+      }
+
+      .links {
+        display: none;
+      }
+    }
+  }
+}

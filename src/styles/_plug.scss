@@ -1,7 +1,6 @@
-@use "sass:math";
 
 // For aligning items center
-@mixin flexbox-center {
+@mixin flexCenter {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -29,10 +28,9 @@ $laptop: 1024px;
 $large-laptop: 1200px;
 
 
-// Px to Rem converter function
-$base-root-size: 16px;
-@function pxToRem($px) {
-    @return math.div($px, $base-root-size) * 1rem; 
+// function to convert px units to rem units
+@function rem($px, $base-font-size: 16px) {
+    @return calc($px / $base-font-size) * 1rem;
 }
 
 
