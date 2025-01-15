@@ -45,7 +45,7 @@
       .course-title {
         position: relative;
         display: flex;
-        justify-content: space-between;
+        justify-content: flex-start;
         align-items: center;
         font-weight: 600;
         font-size: 1.5rem;
@@ -55,6 +55,7 @@
         flex-shrink: 0;
         padding: 0.25rem 0rem;
         color: p.$primary;
+        z-index: 1;
 
         a {
           font-size: 2rem;
@@ -66,6 +67,7 @@
           display: flex;
           justify-content: flex-end;
           align-items: center;
+          z-index: 10;
         }
 
         a:hover {
