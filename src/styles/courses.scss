@@ -1,8 +1,116 @@
 @use "./plug" as p;
 
 .course-main {
-    border: 2px solid red;
-    height: 100vh;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));  
 }
 
+.course-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fff;
+  border-radius: p.rem(10px);
+  box-shadow: p.$boxShadow;
+  padding: p.rem(20px);
+  margin: p.rem(10px);
+  text-align: center;
+  gap: p.rem(10px);
+  transition: transform 0.3s ease;
+  flex-shrink: 0;
 
+  &:hover {
+    transform: translateY(-5px);
+  }
+
+  .card-top {
+    width: 100%;
+    display: flex;
+    gap: 10px;
+    // border: 1px solid red;
+
+    .course-image {
+      height: p.rem(120px);
+      width: p.rem(120px);
+      border-radius: 0.5rem;
+      margin-bottom: 1rem;
+      background-size: cover;
+      background-position: center;
+      flex-shrink: 0;
+    }
+
+    .course-content {
+      flex-grow: 1;
+
+      .course-title {
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-weight: 600;
+        font-size: 1.5rem;
+        cursor: pointer;
+        white-space: normal;
+        flex-wrap: wrap;
+        flex-shrink: 0;
+        padding: 0.25rem 0rem;
+        color: p.$primary;
+
+        a {
+          font-size: 2rem;
+          position: absolute;
+          width: 100%;
+          display: flex;
+          text-decoration: none;
+          color: p.$primary;
+          display: flex;
+          justify-content: flex-end;
+          align-items: center;
+        }
+
+        a:hover {
+          color: p.$primary-dark;
+          transition: color 0.3s ease;
+        }
+      }
+
+      .course-title:hover {
+        color: p.$primary-dark;
+        transition: color 0.3s ease;
+      }
+
+      .card-details {
+        // border: 1px solid red;
+        margin-top: p.rem(5px);
+
+        p {
+          font-size: 1rem;
+          text-align: left;
+          color: p.$text-secondary;
+        }
+      }
+    }
+  }
+  .course-desc {
+    color: p.$text-secondary;
+    flex-grow: 1;
+    text-align: center; 
+
+  }
+
+  .download-button {
+    background-color: #3498db;
+    color: #fff;
+    padding: 10px 20px;
+    margin-top: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+    width: 100%;
+
+    &:hover {
+      background-color: #2980b9;
+    }
+  }
+}

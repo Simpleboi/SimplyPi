@@ -1,9 +1,6 @@
 import React from "react";
 import "../styles/courses.scss";
-
-
-
-
+import Alg1 from "/assets/images/alg1.jpg";
 
 interface CourseProps {
   title?: string;
@@ -38,10 +35,10 @@ export const Course: React.FC<CourseProps> = ({
           <div className="card-details">
             <p className="course-author">Author: Nathaniel Paz</p>
             <p className="course-mod">Last Modified: {modDate}</p>
-            <p className="course-desc">Description: {courseDesc}</p>
           </div>
         </div>
       </div>
+      <p className="course-desc">{courseDesc}</p>
       <a
         href={downloadLink}
         className="download-button"
@@ -54,12 +51,19 @@ export const Course: React.FC<CourseProps> = ({
   );
 };
 
-
 export const Main = () => {
-    return(
+  return (
     <main className="course-main">
-        <h1>Hello World</h1>
+      <Course imageUrl={Alg1} title="Algebra 1" 
+      courseDesc="Algebra 1 focuses on the importance of student development or some shit like that in some type way yk?"/>
+      <Course imageUrl={Alg1} title="Algebra 1" 
+      courseDesc="Algebra 1 focuses on the importance of student development or some shit like that in some type way yk?"/>
+      <Course imageUrl={Alg1} title="Algebra 1" 
+      courseDesc="Algebra 1 focuses on the importance of student development or some shit like that in some type way yk?"/>
+      <Course imageUrl={Alg1} title="Algebra 1" 
+      courseDesc="Algebra 1 focuses on the importance of student development or some shit like that in some type way yk?"/>
+      <Course imageUrl={Alg1} title="Algebra 1" 
+      courseDesc="Algebra 1 focuses on the importance of student development or some shit like that in some type way yk? Algebra 1 focuses on the importance of student development or some shit like that in some type way yk?"/>
     </main>
-)
-}
-
+  );
+};
