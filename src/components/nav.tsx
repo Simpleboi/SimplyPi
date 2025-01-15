@@ -1,14 +1,15 @@
 import "../styles/nav.scss";
 import { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 
 export const MobileNav = () => {
   return (
     <div>
       <div className="mobile-links">
-        <a href="#">Courses</a>
+        <Link to="/course">Courses</Link>
         <a href="#">Resources</a>
         <a href="#">About</a>
-        <a href="#">Blog</a>
+        <Link to="/blog">Courses</Link>
         <a href="#footer">Contact</a>
       </div>
     </div>
@@ -23,19 +24,19 @@ export const NavLinks = () => {
       </figure>
       <ul>
         <li>
-          <a href="#">Courses</a>
+          <Link to="/course">Courses</Link>
         </li>
         <li>
           <a href="#">Resources</a>
         </li>
         <li>
-          <a href="#">About</a>
+          <Link to="/about">About</Link>
         </li>
         <li>
-          <a href="#">Blog</a>
+          <Link to="/blog">Blog</Link>
         </li>
         <li>
-          <a href="#">Contact</a>
+          <Link to="/contact">Contact</Link>
         </li>
       </ul>
     </div>
