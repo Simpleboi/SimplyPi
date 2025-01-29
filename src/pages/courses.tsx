@@ -1,7 +1,7 @@
 import React from "react";
 import "../styles/courses.scss";
-import { Nav } from "../components/nav";
 import { MathCourses } from "../components/mathCourses";
+import { Link } from "react-router-dom";
 
 interface CourseProps {
   title?: string;
@@ -28,9 +28,9 @@ export const Course: React.FC<CourseProps> = ({
         <div className="course-content">
           <h3 className="course-title">
             {title}
-            <a href="#">
+            <Link to={`/${title}`} className="course-title-link">
               <i className="bx bx-chevron-right"></i>
-            </a>
+            </Link>
           </h3>
           <hr />
           <div className="card-details">
