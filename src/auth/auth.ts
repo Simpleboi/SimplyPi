@@ -1,23 +1,41 @@
-import { createUserWithEmailAndPassword, signInWithEmailAndPassword, signOut } from "firebase/auth";
-import { auth, googleProvider } from "../firebase/firebase";
+import {
+  createUserWithEmailAndPassword,
+  signInWithEmailAndPassword,
+  signOut,
+} from "firebase/auth";
+import { auth, googleProvider, githubProvider } from "../firebase/firebase";
 import { signInWithPopup } from "firebase/auth";
+
+// GitHub Sign-In
+export const signInWithGithub = async () => {
+  try {
+    const result = await signInWithPopup(auth, githubProvider);
+    console.log("GitHub User:", result.user);
+  } catch (error) {
+    console.error("GitHub Sign-In Error:", error);
+  }
+};
 
 // Google Sign-In Function
 export const signInWithGoogle = async () => {
-    try {
-      const result = await signInWithPopup(auth, googleProvider);
-      console.log("User signed in:", result.user);
-      return result.user;
-    } catch (error) {
-      console.error("Error signing in with Google:", error);
-      throw error;
-    }
-  };
+  try {
+    const result = await signInWithPopup(auth, googleProvider);
+    console.log("User signed in:", result.user);
+    return result.user;
+  } catch (error) {
+    console.error("Error signing in with Google:", error);
+    throw error;
+  }
+};
 
 // Sign Up Function
 export const signUpUser = async (email: string, password: string) => {
   try {
-    const userCredential = await createUserWithEmailAndPassword(auth, email, password);
+    const userCredential = await createUserWithEmailAndPassword(
+      auth,
+      email,
+      password
+    );
     return userCredential.user;
   } catch (error) {
     console.error("Error signing up:", error);
@@ -28,7 +46,11 @@ export const signUpUser = async (email: string, password: string) => {
 // Log In Function
 export const logInUser = async (email: string, password: string) => {
   try {
-    const userCredential = await signInWithEmailAndPassword(auth, email, password);
+    const userCredential = await signInWithEmailAndPassword(
+      auth,
+      email,
+      password
+    );
     return userCredential.user;
   } catch (error) {
     console.error("Error logging in:", error);

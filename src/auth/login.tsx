@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { logInUser } from "./auth";
 import { useNavigate } from "react-router-dom";
-import { signInWithGoogle } from "./auth";
+import { signInWithGoogle, signInWithGithub } from "./auth";
 import "../styles/login.scss";
 
 export const Login: React.FC = () => {
@@ -64,6 +64,9 @@ export const Login: React.FC = () => {
         <div className="alt-signin-container">
           <button className="google-signin" onClick={handleGoogleLogin}>
             Sign in with Google <i className='bx bxl-google'></i>
+          </button>
+          <button className="github-signin" onClick={signInWithGithub}>
+            Sign in with GitHub <i className='bx bxl-google'></i>
           </button>
         </div>
       </div>
