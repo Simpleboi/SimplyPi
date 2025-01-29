@@ -28,7 +28,10 @@ export const Course: React.FC<CourseProps> = ({
         <div className="course-content">
           <h3 className="course-title">
             {title}
-            <Link to={`/${title}`} className="course-title-link">
+            <Link
+              to={`/courses/${title.replace(/\s+/g, "").toLowerCase()}`}
+              className="course-title-link"
+            >
               <i className="bx bx-chevron-right"></i>
             </Link>
           </h3>

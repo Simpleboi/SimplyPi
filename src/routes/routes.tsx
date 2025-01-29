@@ -6,6 +6,7 @@ import { About } from "../pages/about";
 import { Login } from "../auth/login";
 import { Signup } from "../auth/signup";
 import { Contact } from "../pages/contact";
+import { Alg1 } from "../pages/program/algebra1";
 
 export const AppRoutes = () => {
   return (
@@ -17,6 +18,7 @@ export const AppRoutes = () => {
       <Route path="/contact" element={<Contact />} />
       <Route path="/login" element={<Login />} />
       <Route path="/signup" element={<Signup />} />
+      <Route path="/courses/algebra1" element={<Alg1 />} />
     </Routes>
   );
 };
