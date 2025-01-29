@@ -39,32 +39,32 @@ export const MobileNav = () => {
         <ul className="mobile-nav-links">
           <li>
             <Link to="/" onClick={() => setIsMenuOpen(false)}>
-              Home
+              Home <i className="bx bx-home"></i>
             </Link>
           </li>
           <li>
             <Link to="/course" onClick={() => setIsMenuOpen(false)}>
-              Courses
+              Courses <i className="bx bxs-school"></i>
             </Link>
           </li>
           <li>
             <Link to="/about" onClick={() => setIsMenuOpen(false)}>
-              About
+              About <i className="bx bx-info-square"></i>
             </Link>
           </li>
           <li>
             <Link to="/blog" onClick={() => setIsMenuOpen(false)}>
-              Blog
+              Blog <i className="bx bx-book-reader"></i>
             </Link>
           </li>
           <li>
             <Link to="/contact" onClick={() => setIsMenuOpen(false)}>
-              Contact
+              Contact <i className="bx bxs-contact"></i>
             </Link>
           </li>
           <li>
             <Link to="/login" onClick={() => setIsMenuOpen(false)}>
-              Log In
+              Log In <i className="bx bx-log-in"></i>
             </Link>
           </li>
           <li>

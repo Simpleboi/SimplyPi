@@ -18,9 +18,7 @@ header {
     h1 {
       font-weight: 700;
       font-size: 4.5rem;
-      background-clip: text;
-      color: transparent;
-      background-image: p.$gradient-primary;
+      color: p.$primary;
     }
 
     p {
