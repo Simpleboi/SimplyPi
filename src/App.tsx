@@ -5,10 +5,12 @@ import { CourseMain } from "./pages/courses";
 import { Blog } from "./pages/blog";
 import { About } from "./pages/about";
 import { Contact } from "./pages/contact";
+import { Nav } from "./components/nav";
 
 function App() {
   return (
     <Router>
+      <Nav />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/course" element={<CourseMain />} />
