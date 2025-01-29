@@ -14,12 +14,13 @@ header {
   background-position: 0 0, 15px 15px;
 
   .info {
-    // border: 1px solid red;
 
     h1 {
       font-weight: 700;
-      background: #fff;
-      font-size: p.rem(60px);
+      font-size: 4.5rem;
+      background-clip: text;
+      color: transparent;
+      background-image: p.$gradient-primary;
     }
 
     p {
