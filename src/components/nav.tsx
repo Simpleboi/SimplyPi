@@ -72,14 +72,12 @@ export const Nav = () => {
       )}
       <div className="nav-wrapper-right">
         <div>
-          <button className="sign-up">
+          <Link to="/signup" className="sign-up">
             <i className="bx bx-user"></i>Sign Up
-          </button>
+          </Link>
         </div>
         <div>
-          <button className="log-in">
-            <i className="bx bx-log-in"></i>Log In
-          </button>
+          <Link to="/login" className="log-in"><i className="bx bx-log-in"></i>Log In</Link>
         </div>
       </div>
     </nav>
