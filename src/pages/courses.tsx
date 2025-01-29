@@ -62,7 +62,6 @@ export const Course: React.FC<CourseProps> = ({
 export const CourseMain = () => {
   return (
     <>
-      <Nav/>
       <main className="course-main">
         <MathCourses />
       </main>

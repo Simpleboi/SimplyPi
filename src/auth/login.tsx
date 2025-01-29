@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { logInUser } from "./auth";
 import { useNavigate } from "react-router-dom";
+import { signInWithGoogle } from "./auth";
 import "../styles/login.scss";
 
 export const Login: React.FC = () => {
@@ -19,6 +20,15 @@ export const Login: React.FC = () => {
     }
   };
 
+  const handleGoogleLogin = async () => {
+    try {
+      await signInWithGoogle();
+      navigate("/"); // Redirect after Google login
+    } catch (error) {
+      setError("Google Sign-In failed.");
+    }
+  };
+
   return (
     <div className="auth-container">
       <h2>Login to SimplyPi</h2>
@@ -29,6 +39,9 @@ export const Login: React.FC = () => {
       </form>
       {error && <p className="error">{error}</p>}
       <p>Don't have an account? <a href="/signup">Sign up</a></p>
+      <button className="google-signin" onClick={handleGoogleLogin}>
+        Sign in with Google
+      </button>
     </div>
   );
 };

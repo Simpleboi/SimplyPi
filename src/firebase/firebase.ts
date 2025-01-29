@@ -25,4 +25,4 @@ const auth = getAuth(app);
 const googleProvider = new GoogleAuthProvider();
 
 // Export the use
-export { app, analytics, auth };
+export { app, analytics, auth, googleProvider };
