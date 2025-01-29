@@ -4,18 +4,77 @@ import { Link } from "react-router-dom";
 import { getAuth, onAuthStateChanged, signOut } from "firebase/auth";
 import type { User } from "firebase/auth";
 
-// Mobile Nav Links
-export const MobileNav = () => {
+// Nav Log in Buttons
+export const NavButtons = () => {
   return (
-    <div>
-      <div className="mobile-links">
-        <Link to="/course">Courses</Link>
-        <a href="#">Resources</a>
-        <a href="#">About</a>
-        <Link to="/blog">Courses</Link>
-        <a href="#footer">Contact</a>
+    <div className="nav-buttons">
+      <div>
+        <Link to="/signup" className="sign-up">
+          <i className="bx bx-user"></i> Sign Up
+        </Link>
+      </div>
+      <div>
+        <Link to="/login" className="log-in">
+          <i className="bx bx-log-in"></i> Log In
+        </Link>
       </div>
     </div>
+  );
+};
+
+// Mobile Nav Links
+export const MobileNav = () => {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
+
+  return (
+    <>
+      <button className="mobile-btn" onClick={toggleMenu}>
+        <i className={`bx ${isMenuOpen ? "bx-x" : "bx-menu"}`}></i>
+      </button>
+      <div className={`mobile-menu ${isMenuOpen ? "open" : ""}`}>
+        <ul className="mobile-nav-links">
+          <li>
+            <Link to="/" onClick={() => setIsMenuOpen(false)}>
+              Home
+            </Link>
+          </li>
+          <li>
+            <Link to="/course" onClick={() => setIsMenuOpen(false)}>
+              Courses
+            </Link>
+          </li>
+          <li>
+            <Link to="/about" onClick={() => setIsMenuOpen(false)}>
+              About
+            </Link>
+          </li>
+          <li>
+            <Link to="/blog" onClick={() => setIsMenuOpen(false)}>
+              Blog
+            </Link>
+          </li>
+          <li>
+            <Link to="/contact" onClick={() => setIsMenuOpen(false)}>
+              Contact
+            </Link>
+          </li>
+          <li>
+            <Link to="/login" onClick={() => setIsMenuOpen(false)}>
+              Log In
+            </Link>
+          </li>
+          <li>
+            <Link to="/signup" onClick={() => setIsMenuOpen(false)}>
+              Sign Up <i className="bx bx-user"></i>
+            </Link>
+          </li>
+        </ul>
+      </div>
+    </>
   );
 };
 
@@ -24,7 +83,9 @@ export const NavLinks = () => {
   return (
     <div className="nav-wrapper-left">
       <figure>
-        <h1>SP</h1>
+        <Link to="/" className="logo">
+          SP
+        </Link>
       </figure>
       <ul>
         <li>
@@ -85,9 +146,7 @@ export const Nav = () => {
     <nav className="nav">
       {isMobile ? (
         <div className="nav-wrapper-left">
-          <button>
-            <i className="bx bx-menu"></i>
-          </button>
+          <MobileNav />
         </div>
       ) : (
         <NavLinks />
@@ -95,28 +154,15 @@ export const Nav = () => {
 
       <div className="nav-wrapper-right">
         {user ? (
-          // Show user greeting & logout button when logged in
           <div className="user-info">
             <span>Hello, {user.displayName || "User"}!</span>
             <button onClick={handleLogout} className="log-out">
-            Log Out
-            <i className='bx bx-log-out-circle' ></i> 
+              Log Out
+              <i className="bx bx-log-out-circle"></i>
             </button>
           </div>
         ) : (
-          // Show Sign Up & Log In buttons when logged out
-          <>
-            <div>
-              <Link to="/signup" className="sign-up">
-                <i className="bx bx-user"></i> Sign Up
-              </Link>
-            </div>
-            <div>
-              <Link to="/login" className="log-in">
-                <i className="bx bx-log-in"></i> Log In
-              </Link>
-            </div>
-          </>
+          <NavButtons />
         )}
       </div>
     </nav>
