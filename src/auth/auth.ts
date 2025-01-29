@@ -5,12 +5,28 @@ import {
 } from "firebase/auth";
 import { auth, googleProvider, githubProvider } from "../firebase/firebase";
 import { signInWithPopup } from "firebase/auth";
+import { doc, setDoc, getFirestore } from "firebase/firestore";
+
+// Database for FireStore
+const db = getFirestore();
 
 // GitHub Sign-In
 export const signInWithGithub = async () => {
   try {
     const result = await signInWithPopup(auth, githubProvider);
+    const user = result.user;
+
+    // Save user data in Firestore
+    await setDoc(doc(db, "users", user.uid), {
+      uid: user.uid,
+      name: user.displayName || "Anonymous",
+      email: user.email,
+      profilePic: user.photoURL,
+      provider: "GitHub",
+    });
+
     console.log("GitHub User:", result.user);
+    return user;
   } catch (error) {
     console.error("GitHub Sign-In Error:", error);
   }
@@ -20,8 +36,19 @@ export const signInWithGithub = async () => {
 export const signInWithGoogle = async () => {
   try {
     const result = await signInWithPopup(auth, googleProvider);
+    const user = result.user;
+
+    // Save user data in Firestore
+    await setDoc(doc(db, "users", user.uid), {
+      uid: user.uid,
+      name: user.displayName,
+      email: user.email,
+      profilePic: user.photoURL,
+      provider: "Google",
+    });
+
     console.log("User signed in:", result.user);
-    return result.user;
+    return user;
   } catch (error) {
     console.error("Error signing in with Google:", error);
     throw error;

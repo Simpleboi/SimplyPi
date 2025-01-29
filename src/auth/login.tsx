@@ -14,7 +14,7 @@ export const Login: React.FC = () => {
     e.preventDefault();
     try {
       await logInUser(email, password);
-      navigate("/"); // Redirect after successful login
+      navigate("/home"); // Redirect after successful login
     } catch (error) {
       setError("Invalid email or password.");
     }
@@ -63,10 +63,13 @@ export const Login: React.FC = () => {
         <hr />
         <div className="alt-signin-container">
           <button className="google-signin" onClick={handleGoogleLogin}>
-            Sign in with Google <i className='bx bxl-google'></i>
+            Log in with Google <i className="bx bxl-google"></i>
           </button>
           <button className="github-signin" onClick={signInWithGithub}>
-            Sign in with GitHub <i className='bx bxl-google'></i>
+            Log in with GitHub <i className="bx bxl-github"></i>
+          </button>
+          <button className="momma-signin">
+            Log in with Your Mother <i className='bx bx-female'></i>
           </button>
         </div>
       </div>

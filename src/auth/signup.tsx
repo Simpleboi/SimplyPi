@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import { signUpUser } from "./auth";
 import { useNavigate } from "react-router-dom";
+import "../styles/signup.scss";
+import { signInWithGithub, signInWithGoogle } from "./auth";
 
 export const Signup: React.FC = () => {
   const [email, setEmail] = useState("");
@@ -19,16 +21,48 @@ export const Signup: React.FC = () => {
   };
 
   return (
-    <div className="auth-container">
-      <h2>Sign Up for SimplyPi</h2>
-      <form onSubmit={handleSignup}>
-        <input type="email" placeholder="Email" value={email} onChange={(e) => setEmail(e.target.value)} required />
-        <input type="password" placeholder="Password" value={password} onChange={(e) => setPassword(e.target.value)} required />
-        <button type="submit">Sign Up</button>
-      </form>
-      {error && <p className="error">{error}</p>}
-      <p>Already have an account? <a href="/login">Log in</a></p>
+    <div className="auth-container-signup">
+      <div className="inner-signup-container">
+        <h2>Sign Up for SimplyPi</h2>
+        <form onSubmit={handleSignup}>
+          <label htmlFor="email">
+            Email
+            <input
+              type="email"
+              placeholder="Email"
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
+              required
+            />
+          </label>
+          <label htmlFor="password">
+            Password
+            <input
+              type="password"
+              placeholder="Password"
+              value={password}
+              onChange={(e) => setPassword(e.target.value)}
+              required
+            />
+          </label>
+          <button type="submit">Sign Up</button>
+        </form>
+        {error && <p className="error">{error}</p>}
+        <p>
+          Already have an account? <a href="/login">Log in</a>
+        </p>
+        <div className="alt-signin-container">
+          <button className="google-signin" onClick={signInWithGoogle}>
+            Sign Up with Google <i className="bx bxl-google"></i>
+          </button>
+          <button className="github-signin" onClick={signInWithGithub}>
+            Sign Up with GitHub <i className="bx bxl-github"></i>
+          </button>
+          <button className="github-signin">
+            Sign Up with your Mother <i className='bx bx-female'></i>
+          </button>
+        </div>
+      </div>
     </div>
   );
 };
-
