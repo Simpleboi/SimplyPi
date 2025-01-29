@@ -23,7 +23,7 @@ export const Login: React.FC = () => {
   const handleGoogleLogin = async () => {
     try {
       await signInWithGoogle();
-      navigate("/"); // Redirect after Google login
+      navigate("/");
     } catch (error) {
       setError("Google Sign-In failed.");
     }
@@ -31,18 +31,42 @@ export const Login: React.FC = () => {
 
   return (
     <div className="auth-container">
-      <h2>Login to SimplyPi</h2>
-      <form onSubmit={handleLogin}>
-        <input type="email" placeholder="Email" value={email} onChange={(e) => setEmail(e.target.value)} required />
-        <input type="password" placeholder="Password" value={password} onChange={(e) => setPassword(e.target.value)} required />
-        <button type="submit">Log In</button>
-      </form>
-      {error && <p className="error">{error}</p>}
-      <p>Don't have an account? <a href="/signup">Sign up</a></p>
-      <button className="google-signin" onClick={handleGoogleLogin}>
-        Sign in with Google
-      </button>
+      <div className="inner-auth-container">
+        <h2>Login to SimplyPi</h2>
+        <form onSubmit={handleLogin}>
+          <label htmlFor="Email">
+            Email
+            <input
+              type="email"
+              placeholder="Email"
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
+              required
+            />
+          </label>
+          <label htmlFor="password">
+            Password
+            <input
+              type="password"
+              placeholder="Password"
+              value={password}
+              onChange={(e) => setPassword(e.target.value)}
+              required
+            />
+          </label>
+          <button type="submit">Log In</button>
+        </form>
+        {error && <p className="error">{error}</p>}
+        <p>
+          Don't have an account? <a href="/signup">Sign up</a>
+        </p>
+        <hr />
+        <div className="alt-signin-container">
+          <button className="google-signin" onClick={handleGoogleLogin}>
+            Sign in with Google <i className='bx bxl-google'></i>
+          </button>
+        </div>
+      </div>
     </div>
   );
 };
-

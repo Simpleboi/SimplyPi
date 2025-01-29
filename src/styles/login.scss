@@ -1,5 +1,100 @@
 @use "./plug" as p;
 
 .auth-container {
-    border: 2px solid red;
+  margin-top: 4rem;
+  @include p.flexCenter();
+
+  .inner-auth-container {
+    width: 50%;
+    height: 80%;
+    border-radius: p.$border-radius-medium;
+    box-shadow: p.$box-shadow-medium;
+
+    h2 {
+      text-align: center;
+      font-size: 2.5rem;
+      font-weight: 550;
+      padding: 1rem;
+      color: p.$primary;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      padding: 1rem;
+      gap: 2rem;
+
+      label {
+        display: flex;
+        gap: 0.25rem;
+        flex-direction: column;
+
+        input {
+          padding: 1rem;
+          border-radius: 0.25rem;
+          border: none;
+          background-color: p.$neutral-medium;
+        }
+      }
+      button[type="submit"] {
+        color: p.$text-primary;
+        padding: 0.75rem;
+        border: none;
+        font-size: 1rem;
+        background-color: p.$primary;
+        border-radius: p.$border-radius-medium;
+      }
+      button[type="submit"]:hover {
+        background-color: p.$primary-light;
+        transition: all 0.25s ease;
+      }
+    }
+    p {
+      text-align: center;
+      padding: 0.5rem;
+      color: p.$text-primary;
+    }
+    hr {
+      width: 80%;
+      margin: 0 auto;
+    }
+
+    .alt-signin-container {
+      display: flex;
+      padding: 1rem;
+      align-items: center;
+      justify-content: center;
+
+      button {
+        padding: 1rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 1rem;
+        color: p.$text-primary;
+        border: none;
+        background-color: p.$neutral-medium;
+        border-radius: p.$border-radius-small;
+
+        i {
+          font-size: 1.5rem;
+          margin-left: 0.2rem;
+        }
+      }
+      button:hover {
+        background-color: p.$neutral-dark;
+        transition: all 0.25s ease;
+
+      }
+    }
+  }
+}
+
+
+@media screen and (max-width: p.rem(768px)) {
+    .auth-container {
+        .inner-auth-container {
+            width: 90%;
+        }
+    }
 }
