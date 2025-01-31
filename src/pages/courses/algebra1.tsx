@@ -1,4 +1,5 @@
 import "../../styles/courses/algebra1.scss";
+// import { GraphingCalculator } from "../../ui/GraphingCalculator";
 
 export const Alg1ContentOfTables = () => {
   return (
@@ -39,31 +40,58 @@ export const Alg1ContentOfTables = () => {
         <br />
         <a href="#">Parallel and Perpendicular Lines</a>
         <br />
-        <a href="#">Writing & Interpreting Linear Equations from Word Problems</a>
+        <a href="#">
+          Writing & Interpreting Linear Equations from Word Problems
+        </a>
         <br />
       </details>
       <details>
-        <summary>📈 Systems of Equations & Inequalities
-            <a href="#">Solving Systems of Equations by Graphing
-            </a>
-            <br />
-            <a href="#">Solving Systems of Equations by Substitution
-            </a>
-            <br />
-            <a href="#">Solving Systems of Equations by Elimination
-            </a>
-            <br />
-            <a href="#">Graphing Linear Inequalities
-            </a>
-            <br />
-            <a href="#">Solving Systems of Inequalities
-            </a>
-            <br />
-        </summary>
+        <summary>📈 Systems of Equations & Inequalities</summary>
+        <a href="#">Solving Systems of Equations by Graphing</a>
+        <br />
+        <a href="#">Solving Systems of Equations by Substitution</a>
+        <br />
+        <a href="#">Solving Systems of Equations by Elimination</a>
+        <br />
+        <a href="#">Graphing Linear Inequalities</a>
+        <br />
+        <a href="#">Solving Systems of Inequalities</a>
+        <br />
+      </details>
+      <details>
+        <summary>➗ Polynolymials & Factoring</summary>
+        <a href="#">Introduction to Polynomials</a>
+        <br />
+        <a href="#">Adding & Subtracting Polynomials</a>
+        <br />
+        <a href="#">Multiplying Polynomials</a>
+        <br />
+        <a href="#">Factoring Polynomials</a>
+        <br />
+        <a href="#">
+          Factoring Completely & Solving Quadratic Equations by Factoring
+        </a>
+        <br />
+      </details>
+      <details>
+        <summary>📐 Quadratic Functions & Equations</summary>
+        <a href="#">Understanding Quadratic Functions</a>
+        <br />
+        <a href="#">Graphing Quadratic Equations</a>
+        <br />
+        <a href="#">Solving Quadratic Equations by Square Roots</a>
+        <br />
+        <a href="#">Solving Quadratic Equations by Completing the Square</a>
+        <br />
+        <a href="#">The Quadratic Formula</a>
+        <br />
+        <a href="#">Applications of Quadratic Equations</a>
+        <br />
       </details>
     </section>
   );
 };
+
 
 export const Alg1 = () => {
   return (
