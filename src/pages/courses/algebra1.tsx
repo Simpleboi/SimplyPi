@@ -88,10 +88,49 @@ export const Alg1ContentOfTables = () => {
         <a href="#">Applications of Quadratic Equations</a>
         <br />
       </details>
+      <details>
+        <summary>📊 Exponents & Radicals</summary>
+        <a href="#">Rules of Exponents</a>
+        <br />
+        <a href="#">Negative & Zero Exponents</a>
+        <br />
+        <a href="#">Scientific Notation & Applications</a>
+        <br />
+        <a href="#">Simplifying Square Roots & Radical Expressions</a>
+        <br />
+        <a href="#">Operations with Radicals</a>
+        <br />
+      </details>
+      <details>
+        <summary>📉 Functions & Relations</summary>
+        <a href="#">Understanding Relations & Functions</a>
+        <br />
+        <a href="#">Identifying Functions from Graphs & Tables</a>
+        <br />
+        <a href="#">Function Transformations</a>
+        <br />
+      </details>
+      <details>
+        <summary>🎲 Probability & Statistics</summary>
+        <a href="#">Basic Probability Rules</a>
+        <br />
+        <a href="#">Measures of Central Tendency</a>
+        <br />
+        <a href="#">Interpreting Graphs & Data Sets</a>
+        <br />
+      </details>
+      <details>
+        <summary>🎯 Final Review & Practice</summary>
+        <a href="#">Comprehensive Algebra 1 Review</a>
+        <br />
+        <a href="#">Practice Tests & Sample Problems</a>
+        <br />
+        <a href="#">Real-World Applications of Algebra</a>
+        <br />
+      </details>
     </section>
   );
 };
-
 
 export const Alg1 = () => {
   return (
