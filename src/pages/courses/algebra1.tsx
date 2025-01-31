@@ -132,9 +132,26 @@ export const Alg1ContentOfTables = () => {
   );
 };
 
+export const Alg1Resources = () => {
+  return (
+    <div className="alg1-resources">
+      <button>PDF Notes</button>
+      <button>Practice Worksheets</button>
+      <button>Extra Resources</button>
+      <button>Q&A</button>
+    </div>
+  );
+};
+
+
+
 export const Alg1 = () => {
   return (
     <section className="algebra-1">
+      <h1 className="alg1-header">Algebra 1</h1>
+      <Alg1Resources />
+      <hr />
+      <p>Last Updated: 01/31/25</p>
       <Alg1ContentOfTables />
     </section>
   );

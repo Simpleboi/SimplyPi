@@ -1,5 +1,23 @@
+@use "../plug" as p;
+
 .algebra-1 {
   padding: 1rem;
+
+  .alg1-header {
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 550;
+    padding: 0.5rem;
+  }
+
+  hr {
+    width: 90%;
+    margin: 0 auto;
+  }
+  p {
+    // border: 1px solid red;
+    padding-top: 0.5rem;
+  }
 }
 
 .alg1-toc {
@@ -14,15 +32,34 @@
   details {
     font-size: 1.25rem;
     padding: 0.5rem;
-    // border: 1px solid red;
-
-    summary {
-      // border: 1px solid red;
-    }
   }
 }
 
 #calculator {
   width: 600px;
   height: 400px;
+}
+
+.alg1-resources {
+    padding: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+
+    button {
+        padding: 1rem;
+        border-radius: p.$border-radius-medium;
+        background-color: p.$neutral-medium;
+        color: p.$text-primary;
+        font-size: 1rem;
+        border: none;
+    }
+
+    button:hover {
+        background-color: p.$neutral-dark;
+        color: p.$text-secondary;
+        transition: all 0.25s ease;
+    }
 }
