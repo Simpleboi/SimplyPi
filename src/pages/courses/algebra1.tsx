@@ -1,5 +1,6 @@
 import "../../styles/courses/algebra1.scss";
 // import { GraphingCalculator } from "../../ui/GraphingCalculator";
+import { CourseHeader } from "../../ui/CourseHeader";
 
 export const Alg1ContentOfTables = () => {
   return (
@@ -139,16 +140,15 @@ export const Alg1Resources = () => {
       <button>Practice Worksheets</button>
       <button>Extra Resources</button>
       <button>Q&A</button>
+      <button>Graphing Calculator</button>
     </div>
   );
 };
 
-
-
 export const Alg1 = () => {
   return (
     <section className="algebra-1">
-      <h1 className="alg1-header">Algebra 1</h1>
+      <CourseHeader title="Algebra 1"></CourseHeader>
       <Alg1Resources />
       <hr />
       <p>Last Updated: 01/31/25</p>
