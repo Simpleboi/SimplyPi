@@ -7,7 +7,7 @@ export const courses = [
   {
     id: "algebra1",
     title: "Algebra 1",
-    modDate: "01/15/2024",
+    modDate: "02/03/2025",
     imageUrl: Alg1,
     courseDesc:
       "Algebra 1 covers solving equations, graphing functions, and understanding variables.",

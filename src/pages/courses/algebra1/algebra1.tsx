@@ -151,7 +151,7 @@ export const Alg1 = () => {
       <CourseHeader title="Algebra 1"></CourseHeader>
       <Alg1Resources />
       <hr />
-      <p>Last Updated: 01/31/25</p>
+      <p>Last Updated: 02/03/25</p>
       <Alg1ContentOfTables />
       <IntroToAlg1 />
     </section>

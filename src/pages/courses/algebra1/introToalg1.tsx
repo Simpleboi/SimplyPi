@@ -345,7 +345,29 @@ export const PropertiesOfAlg1 = () => {
       Think of these Properties like the rules of a game, if you understand the rules, you can play smarter and solve problems without getting stuck! 
     </p>
     <h3>The Communative Property (Switching the Order)</h3>
-    <p>Something</p>
+    <p>Imagine you're holding two apples in one hand and three apples in the other. No matter which hand you count first, the total is always <b>five apples</b>. 
+    <br />This is how the Communtative Property works! 
+    It says that the order of numbers doesn't matter when adding or multiplying.
+    <br /><br />The property is as follows: 
+    <MathJax>{"\\[a+b=b+a\\]"}</MathJax>
+    For example:
+    <MathJax>{"\\[2+3=3=2\\]"}</MathJax>
+    (Both equal to 5, so the order doesn't change the answer). This property also works for multiplication. The property is as follows: 
+    <MathJax>{"\\[a\\times b=b\\times a\\]"}</MathJax>
+    For example:
+    <MathJax>{"\\[4\\times7=7\\times4\\]"}</MathJax>
+    (Both equal 28, so switching the order again doesn't matter)
+    <br />
+    <br />
+    Something important to note is that this does <b>NOT</b> work for subtraction or division. I've seen it in the flesh and it's important to clarify that. The Commutative Property only works for addition and multiplication.
+    For example:
+    <MathJax>{"\\[10-3\\ne 3-10\\]"}</MathJax>
+    10 - 3 is 7, but 3 - 10 is -7, which is very different.
+    </p>
+    <h3>The Associative Property (Grouping Doesn't Matter)</h3>
+    <p>
+      Think
+    </p>
   </div>
 )
 }
