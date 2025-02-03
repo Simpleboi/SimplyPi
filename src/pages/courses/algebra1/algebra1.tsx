@@ -8,9 +8,9 @@ export const Alg1ContentOfTables = () => {
       <h2>Table of Contents</h2>
       <details>
         <summary>📖Introduction to Algebra 1</summary>
-        <a href="#">What is Algebra?</a>
+        <a href="#whatIsAlgebra1">What is Algebra?</a>
         <br />
-        <a href="#">Order of Operations (PEMDAS)</a>
+        <a href="#orderOfOperations">Order of Operations (PEMDAS)</a>
         <br />
         <a href="#">Basic Properties of Algebra</a>
       </details>

@@ -17,7 +17,7 @@ export const MathExample = () => {
 
 export const WhatIsAlgebra1 = () => {
   return (
-    <div>
+    <div id="whatIsAlgebra1">
       <p>
         Algebra is like a <b>number puzzle</b> that helps us solve problems
         where we don't know all the numbers yet. Instead of only using regular
@@ -140,7 +140,7 @@ export const WhatIsAlgebra1 = () => {
 export const OrderOfOperations = () => {
   return (
     <div>
-      <h2>Order of Operations</h2>
+      <h2 id="orderOfOperations">Order of Operations</h2>
       <p>
         Math can be tricky when you see a big problem with a bunch of numbers,
         parentheses, and different symbols. If you don't follow the right steps,
@@ -162,17 +162,63 @@ export const OrderOfOperations = () => {
       <p>
         Each letter tells us{" "}
         <i>which part of the math problem to solve first</i> so we don't get
-        mixed up. Let's break each of these down step-by-step.
+        mixed up. Let's break each of these down step-by-step and see why the
+        order of this matters!
       </p>
       <h3>Step 1: Parentheses (P)</h3>
       <p>
-        If there are parentheses () in the problem, we <i>always</i> start
-        there. Parentheses group numbers together to tell us what needs to be done first. For example:
+        If there are parentheses () in the problem, we <i>always</i> start by
+        solving what's inside them first. Parentheses are like a math
+        "container" that tells us to focus on a certain part of the problem
+        before doing anything else. Parentheses group numbers together to tell
+        us what needs to be done first. For example:
         <MathJax>{"\\[(2 + 3 )*4\\]"}</MathJax>
-        Here, we solve 2 + 3 first because it's inside the parentheses. That gives us: 
+        Here, we solve 2 + 3 first because it's inside the parentheses. That
+        gives us:
         <MathJax>{"\\[5 * 4\\]"}</MathJax>
-        Without parentheses, the answer might be different! That's why it's <b>so important</b> to check for parentheses first before doing anything else.
+        If we ignored the parentheses and just solved left to right, we might do
+        3 x 4 first, which would give us the wrong answer. That's why
+        parentheses come first, they group numbers together and tell us what to
+        solve first. That's why it's <b>so important</b> to check for
+        parentheses first before doing anything else.
       </p>
+      <h3>Step 2: Exponents (E)</h3>
+      <p>
+        Next, we solve any exponents. Exponents are the tiny numbers that sit
+        above a number, and they tell us to multiply the number by itself a
+        certain number of times. For example:
+        <MathJax>{"\\[3^2\\]"}</MathJax>
+        This means 3 x 3, which equals 9:
+        <MathJax>{"\\[3^2=3*3\\]"}</MathJax>
+        <MathJax>{"\\[=3*3\\]"}</MathJax>
+        <MathJax>{"\\[=9\\]"}</MathJax>
+        Now let's look at a bigger problem:
+        <MathJax>{"\\[5 + 2^3\\]"}</MathJax>
+        We <b>must</b> solve the exponents first:
+        <MathJax>{"\\[5 + (2*2*2)\\]"}</MathJax>
+        <MathJax>{"\\[=5 + 8\\]"}</MathJax>
+        <MathJax>{"\\[=13\\]"}</MathJax>
+        If we just ignored the exponent and just added 5 + 2 first, we'd
+        completely mess up the answer. That's why we always take care of
+        exponents right after parentheses.
+      </p>
+      <h3>Step 3: Multiplication (M)</h3>
+      <p>
+        Now we move onto multiplication, but there's something really important at this step: Multiplication is <b>NOT</b> always done before division! We just solve them from left to right, whichever comes first. For example:
+        <MathJax>{"\\[3 * 4 + 5\\]"}</MathJax>
+        Here, we do <b>multiplication</b> first, because it's before addition: 
+        <MathJax>{"\\[12+5\\]"}</MathJax>
+        <MathJax>{"\\[=17\\]"}</MathJax>
+        Another example:
+        <MathJax>{"\\[6+2*3\\]"}</MathJax>
+        We <b>must</b> multiply first:
+        <MathJax>{"\\[6+(2 * 3)\\]"}</MathJax>
+        <MathJax>{"\\[=6+6\\]"}</MathJax>
+        <MathJax>{"\\[=12\\]"}</MathJax>
+        If we added 6 + 2 first, we'd get the wrong answer! That's why multiplication is always handled before addtion or subtraction.
+      </p>
+      <h3>Step 4: Division (D)</h3>
+      <p>Division works the same way</p>
     </div>
   );
 };
