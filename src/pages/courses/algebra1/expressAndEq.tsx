@@ -63,17 +63,23 @@ export const SimplyfyingExpres = () => {
       <p>
         Once we've found the like terms, we add or subtract them to simplify the
         expression.
-        <br />Example 1:
+        <br />
+        Example 1:
         <MathJax>{"\\[3x+5-2x\\]"}</MathJax>
-        Here, <MathJax inline>{"\\(3x\\)"}</MathJax> and <MathJax inline>{"\\(-2x\\)"}</MathJax> are like terms, so we combine them together:
+        Here, <MathJax inline>{"\\(3x\\)"}</MathJax> and{" "}
+        <MathJax inline>{"\\(-2x\\)"}</MathJax> are like terms, so we combine
+        them together:
         <MathJax>{"\\[(3x-2x)+5\\]"}</MathJax>
         This can also be written as:
         <MathJax>{"\\[(3-2)x+5\\]"}</MathJax>
         Which equals:
         <MathJax>{"\\[x+5\\]"}</MathJax>
-        And this is as simple it can get, or in algebra we'd say this expression is simplified.
-
-
+        And this is as simple it can get, or in algebra we'd say this expression
+        is simplified.
+      </p>
+      <h3>Use the Distributive Property if Needed</h3>
+      <p>
+        Sometimes expressions have parentheses, and we need to distribute a number before combining like terms.
       </p>
     </div>
   );

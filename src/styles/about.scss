@@ -39,6 +39,26 @@
         width: 100%;
         padding: 1rem;
     }
+    .logo {
+        width: 50%;
+        max-width: 500px;
+        box-shadow: p.$box-shadow-light;
+        border-radius: 1rem;
+
+        img {
+            object-fit: contain;
+            height: 100%;
+            width: 100%;
+            border-radius: 1rem;
+        }
+    }
+    .logo-credit {
+        font-weight: 400;
+
+        a {
+            text-decoration: none;
+        }
+    }
     ul {
         padding: 1rem 3rem; 
 

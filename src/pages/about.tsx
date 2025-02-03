@@ -1,5 +1,7 @@
 import "../styles/about.scss";
 import { Link } from "react-router-dom";
+import logo from "/assets/icons/logo.jpg";
+import logoTwo from "/assets/icons/logo2.jpg";
 
 export const About = () => {
   return (
@@ -61,13 +63,25 @@ export const About = () => {
         to make learning simple, fun, and available to all.
       </p>
       <h3>-Nate</h3>
+      <figure className="logo">
+        <img src={logo} alt="logo" />
+      </figure>
+      <h4 className="logo-credit">
+        Logo made by{" "}
+        <a href="https://www.instagram.com/re_n_go/" target="_blank">
+          Gary
+        </a>
+      </h4>
+      <br />
+      <br />
       <h2>Want to Contribute?</h2>
       <hr />
       <h3>For Developers</h3>
       <p>
-        SimplyPi is built with React, TypeScript, Firebase, and SCSS, but we're
-        always looking to integrate new technologies to enhance the learning
-        experience. If you'd like to contribute:
+        <span>SimplyPi</span> is built with React, TypeScript, MathJax,
+        Firebase, and SCSS, but we're always looking to integrate new
+        technologies to enhance the learning experience. If you'd like to
+        contribute:
       </p>
       <ul>
         <li>
@@ -126,17 +140,29 @@ export const About = () => {
         </li>
       </ul>
       <p>
-        <span>SimplyPi</span> is an open learning community, and we'd love for you to join us
-        in creating a better way to learn. Whether you want to submit notes,
-        suggest improvements, or create full lesson plans, your contributions
-        will help students worldwide understand math & science in a way that
-        actually makes sense Let us know how you'd like to contribute, visit the 
-        <Link to="/contact"> Contact</Link> tab to learn how to get in contact with us. Submit your content
-        , We can help format and integrate it into <span>SimplyPi's</span> courses. Let's
-        Work together to make learning truly as <span>Simple</span> as <span>Pi</span>! Your expertise can
+        <span>SimplyPi</span> is an open learning community, and we'd love for
+        you to join us in creating a better way to learn. Whether you want to
+        submit notes, suggest improvements, or create full lesson plans, your
+        contributions will help students worldwide understand math & science in
+        a way that actually makes sense Let us know how you'd like to
+        contribute, visit the
+        <Link to="/contact"> Contact</Link> tab to learn how to get in contact
+        with us. Submit your content , We can help format and integrate it into{" "}
+        <span>SimplyPi's</span> courses. Let's Work together to make learning
+        truly as <span>Simple</span> as <span>Pi</span>! Your expertise can
         change the way students approach math & science. Let's build a better
         learning experience together! 🚀
       </p>
+      <figure className="logo">
+        <img src={logoTwo} alt="" />
+      </figure>
+      <h4 className="logo-credit">
+        Logo made by{" "}
+        <a href="https://www.instagram.com/re_n_go/" target="_blank">
+          Gary
+        </a>
+      </h4>
+      <br />
     </section>
   );
 };
