@@ -12,7 +12,7 @@ export const Alg1ContentOfTables = () => {
         <br />
         <a href="#orderOfOperations">Order of Operations (PEMDAS)</a>
         <br />
-        <a href="#">Basic Properties of Algebra</a>
+        <a href="#propsOfAlg1">Basic Properties of Algebra</a>
       </details>
       <details>
         <summary>🔢 Algebraic Expressions & Equations</summary>

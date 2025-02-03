@@ -258,13 +258,97 @@ export const OrderOfOperations = () => {
         and solve as such:
         <MathJax>{"\\[=4+(12)\\]"}</MathJax>
         <MathJax>{"\\[=16\\]"}</MathJax>
-        If we added first, we'd get <MathJax inline>{"\\(6 \\times 2=12\\)"}</MathJax>, which is wrong!
+        If we added first, we'd get{" "}
+        <MathJax inline>{"\\(6 \\times 2=12\\)"}</MathJax>, which is wrong!
       </p>
       <h3>Step 6: Subtraction (S)</h3>
-      <p>The very last </p>
+      <p>
+        The very last thing we do is subtraction. Just like addition, we solve
+        it after all the other steps are done. For example:
+        <MathJax>{"\\[10-4-2\\]"}</MathJax>
+        We move left to right, just like reading a sentence:
+        <MathJax>{"\\[(10-4)-2\\]"}</MathJax>
+        <MathJax>{"\\[=(6)-2\\]"}</MathJax>
+        <MathJax>{"\\[=4\\]"}</MathJax>
+        Now let's try a trickier one:
+        <MathJax>{"\\[20-3\\times4\\]"}</MathJax>
+        Multiplication comes before subtraction, so we solve 3 x 4 first:
+        <MathJax>{"\\[20-(3\\times4)\\]"}</MathJax>
+        <MathJax>{"\\[=20-(12)\\]"}</MathJax>
+        <MathJax>{"\\[=8\\]"}</MathJax>
+        if we subtracted first, we'd get 17 x 4 = 64, which is wrong. That's why
+        subtraction comes last in the order.
+      </p>
+      <h3>Expressions vs. Equations - What's the Difference?</h3>
+      <p>
+        Before we move on, let's clear up something that confuses a lot of
+        people: the difference between an expression and an equation.
+        <br />
+        <br />
+        An <b>expression</b> is like a math sentence that includes numbers,
+        variables, and operations but <b>no equal sign</b>. It's just a
+        statement that represents something, but it can't be solved completely.
+        For example:
+        <MathJax>{"\\[3x+5\\]"}</MathJax>
+        This is an expression because it doesn't tell us what{" "}
+        <MathJax inline>{"\\(x\\)"}</MathJax> is equal to. It's like saying, "I
+        have three times a mystery number plus five" but never telling us what
+        the mystery number is.
+        <br />
+        <br />
+        An <b>equation</b>, on the other hand, is a complete math statement with
+        an equal sign (=). It shows balance between two sides and can be solved.
+        For example:
+        <MathJax>{"\\[3x+5=11\\]"}</MathJax>
+        Now we can solve for <MathJax inline>{"\\(x\\)"}</MathJax>, because the
+        equal sign tells us both sides are equal.
+        <br />
+        <br />
+        Think of it this way:
+        <br />
+        <br />
+        An <b>expression</b> is like half of a puzzle, it has pieces but no full
+        picture. <br />
+        an <b>equation</b> is like a complete puzzle, everything fits together
+        to give an answer!
+      </p>
+      <h3>Let's See PEMDAS in Action!</h3>
+      <p>
+        Now that we know the rules, let's solve a real problem step by step:
+        <MathJax>{"\\[6+(4\\times2^2)-5\\]"}</MathJax>
+        Remember, the first letter in PEMDAS is parentheses, so we want to solve what's inside that first. With that said, we'll focus on <MathJax inline>{"\\((4\\times2^2)\\)"}</MathJax>
+        <MathJax>{"\\[(4\\times2^2)\\]"}</MathJax>
+        <MathJax>{"\\[=(4\\times4)\\]"}</MathJax>
+        <MathJax>{"\\[=(16)\\]"}</MathJax>
+        so now our expression looks like:
+        <MathJax>{"\\[6+(16)-5\\]"}</MathJax>
+        This expression is the same as:
+        <MathJax>{"\\[6+16-5\\]"}</MathJax>
+        Next we have addition and subtraction. But when we have both in the same statement, addition comes before subtraction. So we solve that first:
+        <MathJax>{"\\[(6+16)-5\\]"}</MathJax>
+        <MathJax>{"\\[=(22)-5\\]"}</MathJax>
+        Now all that's left is the subtraction:
+        <MathJax>{"\\[22-5\\]"}</MathJax>
+        <MathJax>{"\\[=17\\]"}</MathJax>
+        The final answer is 17! 
+      </p>
     </div>
   );
 };
+
+export const PropertiesOfAlg1 = () => {
+  return(
+  <div>
+    <h2 id="propsOfAlg1">Basic Properties of Algebra</h2>
+    <p>
+      Algebra might seem like a bunch of rules and symbols, but at its core, it follows some simple and logical patterns. These patterns are called the <b>Basic Properties of Algebra</b>. They help us solve problems faster and easier by showing us how numbers behave when we add, multiply, and move things around. <br />
+      Think of these Properties like the rules of a game, if you understand the rules, you can play smarter and solve problems without getting stuck! 
+    </p>
+    <h3>The Communative Property (Switching the Order)</h3>
+    <p>Something</p>
+  </div>
+)
+}
 
 export const IntroToAlg1 = () => {
   return (
@@ -275,6 +359,8 @@ export const IntroToAlg1 = () => {
         <WhatIsAlgebra1 />
         <hr />
         <OrderOfOperations />
+        <hr />
+        <PropertiesOfAlg1 />
       </section>
     </MathJaxContext>
   );
