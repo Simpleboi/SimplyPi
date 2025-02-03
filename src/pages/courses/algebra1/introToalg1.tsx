@@ -234,8 +234,34 @@ export const OrderOfOperations = () => {
         <MathJax>{"\\[8 \\div (2 \\times4)\\]"}</MathJax>
         <MathJax>{"\\[=8 \\div 8\\]"}</MathJax>
         <MathJax>{"\\[=1\\]"}</MathJax>
-        That's totally wrong! So we <b>must</b> follow the order of operations from left to right when multiplication and division are both in the same equation.
+        That's totally wrong! So we <b>must</b> follow the order of operations
+        from left to right when multiplication and division are both in the same
+        equation.
       </p>
+      <h3>Step 5: Addition (A)</h3>
+      <p>
+        After finishing all parentheses, exponents, multiplication, and
+        division, we <b>finally</b> move to addition. For example:
+        <MathJax>{"\\[7+3+2\\]"}</MathJax>
+        Since there's only addition here, we just go left to right:
+        <MathJax>{"\\[(7+3)+2\\]"}</MathJax>
+        <MathJax>{"\\[=10+2\\]"}</MathJax>
+        <MathJax>{"\\[=12\\]"}</MathJax>
+        But if there were other operations, we always handle them first before
+        adding!
+        <br />
+        Let's look at a bigger problem:
+        <MathJax>{"\\[4+6 \\times 2\\]"}</MathJax>
+        In the order of PEMDAS, multiplication comes before addition, so we must
+        do that first. So we can rewrite the problem as such:
+        <MathJax>{"\\[4+(6\\times 2)\\]"}</MathJax>
+        and solve as such:
+        <MathJax>{"\\[=4+(12)\\]"}</MathJax>
+        <MathJax>{"\\[=16\\]"}</MathJax>
+        If we added first, we'd get <MathJax inline>{"\\(6 \\times 2=12\\)"}</MathJax>, which is wrong!
+      </p>
+      <h3>Step 6: Subtraction (S)</h3>
+      <p>The very last </p>
     </div>
   );
 };
