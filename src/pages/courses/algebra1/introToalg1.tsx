@@ -204,9 +204,12 @@ export const OrderOfOperations = () => {
       </p>
       <h3>Step 3: Multiplication (M)</h3>
       <p>
-        Now we move onto multiplication, but there's something really important at this step: Multiplication is <b>NOT</b> always done before division! We just solve them from left to right, whichever comes first. For example:
+        Now we move onto multiplication, but there's something really important
+        at this step: Multiplication is <b>NOT</b> always done before division!
+        We just solve them from left to right, whichever comes first. For
+        example:
         <MathJax>{"\\[3 * 4 + 5\\]"}</MathJax>
-        Here, we do <b>multiplication</b> first, because it's before addition: 
+        Here, we do <b>multiplication</b> first, because it's before addition:
         <MathJax>{"\\[12+5\\]"}</MathJax>
         <MathJax>{"\\[=17\\]"}</MathJax>
         Another example:
@@ -215,10 +218,17 @@ export const OrderOfOperations = () => {
         <MathJax>{"\\[6+(2 * 3)\\]"}</MathJax>
         <MathJax>{"\\[=6+6\\]"}</MathJax>
         <MathJax>{"\\[=12\\]"}</MathJax>
-        If we added 6 + 2 first, we'd get the wrong answer! That's why multiplication is always handled before addtion or subtraction.
+        If we added 6 + 2 first, we'd get the wrong answer! That's why
+        multiplication is always handled before addtion or subtraction.
       </p>
       <h3>Step 4: Division (D)</h3>
-      <p>Division works the same way</p>
+      <p>
+        Division works the same way as multiplication, whichever one comes first
+        from left to right. For example:
+        <MathJax>{"\\[8 \\div 2 \\times4\\]"}</MathJax>
+        We go left to right, so first we divide:
+
+      </p>
     </div>
   );
 };
