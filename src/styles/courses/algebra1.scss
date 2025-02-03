@@ -47,16 +47,17 @@
     gap: 1rem;
     flex-wrap: wrap;
 
-    button {
+    a {
         padding: 1rem;
         border-radius: p.$border-radius-medium;
         background-color: p.$neutral-medium;
         color: p.$text-primary;
         font-size: 1rem;
         border: none;
+        text-decoration: none;
     }
 
-    button:hover {
+    a:hover {
         background-color: p.$neutral-dark;
         color: p.$text-secondary;
         transition: all 0.25s ease;

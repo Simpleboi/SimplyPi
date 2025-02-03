@@ -355,7 +355,7 @@ export const OrderOfOperations = () => {
         <br />
         9. <MathJax inline>{"\\(25-(10\\div2)\\times3\\)"}</MathJax>
         <br />
-        10. <MathJax inline>{"\\(4+3\\times(2+5^2)-10\\div5\\)"}</MathJax>
+        10. <MathJax inline>{"\\(4+3\\times(2+5^2)-10\\div\\)"}</MathJax>
       </p>
       <br />
       The answer key to the section will be in 1.4 of the answers. Click{" "}

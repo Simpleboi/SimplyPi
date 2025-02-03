@@ -1,6 +1,7 @@
 import "../../../styles/courses/algebra1.scss";
 import { CourseHeader } from "../../../ui/CourseHeader";
 import { IntroToAlg1 } from "./introToalg1";
+import { ExpressAndEq } from "./expressAndEq";
 
 export const Alg1ContentOfTables = () => {
   return (
@@ -16,7 +17,7 @@ export const Alg1ContentOfTables = () => {
       </details>
       <details>
         <summary>🔢 Algebraic Expressions & Equations</summary>
-        <a href="#">Simplying Expressions</a>
+        <a href="#simple-express">Simplying Expressions</a>
         <br />
         <a href="#">Solving One-step Equations</a>
         <br />
@@ -134,13 +135,18 @@ export const Alg1ContentOfTables = () => {
 };
 
 export const Alg1Resources = () => {
+  const alg1pdfUrl =
+    "https://hillcrestmath.wordpress.com/wp-content/uploads/2010/08/8th-grade-algebra-i-textbook.pdf";
+
   return (
     <div className="alg1-resources">
-      <button>PDF Notes</button>
-      <button>Practice Worksheets</button>
-      <button>Extra Resources</button>
-      <button>Q&A</button>
-      <button>Graphing Calculator</button>
+      <a href={alg1pdfUrl} target="_blank" download="Algebgra1">
+        PDF Notes
+      </a>
+      <a>Practice Worksheets</a>
+      <a>Extra Resources</a>
+      <a>Q&A</a>
+      <a>Graphing Calculator</a>
     </div>
   );
 };
@@ -153,7 +159,20 @@ export const Alg1 = () => {
       <hr />
       <p>Last Updated: 02/03/25</p>
       <Alg1ContentOfTables />
+      <p>
+        This course is designed to be flexible, allowing you to explore topics
+        at your own pace rather than following a strict, linear progression. You
+        don't have to start at the beginning and work your way to the end,
+        instead, you can jump to any section that aligns with what you need to
+        learn at the moment. Whether you're reviewing concepts, filling in
+        knowledge gaps, or tackling new material, this course serves as a
+        self-study resource rather than a step-by-step guided curriculum. The
+        goal is to give you the freedom to learn in a way that best suits your
+        individual needs.
+      </p>
+      <br />
       <IntroToAlg1 />
+      <ExpressAndEq />
     </section>
   );
 };
