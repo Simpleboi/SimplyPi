@@ -344,9 +344,24 @@ export const OrderOfOperations = () => {
         3. <MathJax inline>{"\\(5\\times(3+7)-4)\\)"}</MathJax>
         <br />
         4. <MathJax inline>{"\\(12\\div(2\\times3)+1\\)"}</MathJax>
+        <br />
+        5. <MathJax inline>{"\\((3+2)^2-6\\times2\\)"}</MathJax>
+        <br />
+        6. <MathJax inline>{"\\((5+3)\\times2^2-4\\)"}</MathJax>
+        <br />
+        7. <MathJax inline>{"\\(18\\div(3+3)\\times4\\)"}</MathJax>
+        <br />
+        8. <MathJax inline>{"\\((9-4)\\times3+2^2\\)"}</MathJax>
+        <br />
+        9. <MathJax inline>{"\\(25-(10\\div2)\\times3\\)"}</MathJax>
+        <br />
+        10. <MathJax inline>{"\\(4+3\\times(2+5^2)-10\\div5\\)"}</MathJax>
       </p>
       <br />
-      The answer key to the section will be in 1.4 of the answers. Click <a href="#">here</a> to go there.
+      The answer key to the section will be in 1.4 of the answers. Click{" "}
+      <a href="#">here</a> to go there. 
+      <br />
+      <br />
     </div>
   );
 };
