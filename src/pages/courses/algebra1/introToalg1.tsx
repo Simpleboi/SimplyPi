@@ -316,7 +316,9 @@ export const OrderOfOperations = () => {
       <p>
         Now that we know the rules, let's solve a real problem step by step:
         <MathJax>{"\\[6+(4\\times2^2)-5\\]"}</MathJax>
-        Remember, the first letter in PEMDAS is parentheses, so we want to solve what's inside that first. With that said, we'll focus on <MathJax inline>{"\\((4\\times2^2)\\)"}</MathJax>
+        Remember, the first letter in PEMDAS is parentheses, so we want to solve
+        what's inside that first. With that said, we'll focus on{" "}
+        <MathJax inline>{"\\((4\\times2^2)\\)"}</MathJax>
         <MathJax>{"\\[(4\\times2^2)\\]"}</MathJax>
         <MathJax>{"\\[=(4\\times4)\\]"}</MathJax>
         <MathJax>{"\\[=(16)\\]"}</MathJax>
@@ -324,53 +326,116 @@ export const OrderOfOperations = () => {
         <MathJax>{"\\[6+(16)-5\\]"}</MathJax>
         This expression is the same as:
         <MathJax>{"\\[6+16-5\\]"}</MathJax>
-        Next we have addition and subtraction. But when we have both in the same statement, addition comes before subtraction. So we solve that first:
+        Next we have addition and subtraction. But when we have both in the same
+        statement, addition comes before subtraction. So we solve that first:
         <MathJax>{"\\[(6+16)-5\\]"}</MathJax>
         <MathJax>{"\\[=(22)-5\\]"}</MathJax>
         Now all that's left is the subtraction:
         <MathJax>{"\\[22-5\\]"}</MathJax>
         <MathJax>{"\\[=17\\]"}</MathJax>
-        The final answer is 17! 
+        The final answer is 17!
       </p>
     </div>
   );
 };
 
 export const PropertiesOfAlg1 = () => {
-  return(
-  <div>
-    <h2 id="propsOfAlg1">Basic Properties of Algebra</h2>
-    <p>
-      Algebra might seem like a bunch of rules and symbols, but at its core, it follows some simple and logical patterns. These patterns are called the <b>Basic Properties of Algebra</b>. They help us solve problems faster and easier by showing us how numbers behave when we add, multiply, and move things around. <br />
-      Think of these Properties like the rules of a game, if you understand the rules, you can play smarter and solve problems without getting stuck! 
-    </p>
-    <h3>The Communative Property (Switching the Order)</h3>
-    <p>Imagine you're holding two apples in one hand and three apples in the other. No matter which hand you count first, the total is always <b>five apples</b>. 
-    <br />This is how the Communtative Property works! 
-    It says that the order of numbers doesn't matter when adding or multiplying.
-    <br /><br />The property is as follows: 
-    <MathJax>{"\\[a+b=b+a\\]"}</MathJax>
-    For example:
-    <MathJax>{"\\[2+3=3=2\\]"}</MathJax>
-    (Both equal to 5, so the order doesn't change the answer). This property also works for multiplication. The property is as follows: 
-    <MathJax>{"\\[a\\times b=b\\times a\\]"}</MathJax>
-    For example:
-    <MathJax>{"\\[4\\times7=7\\times4\\]"}</MathJax>
-    (Both equal 28, so switching the order again doesn't matter)
-    <br />
-    <br />
-    Something important to note is that this does <b>NOT</b> work for subtraction or division. I've seen it in the flesh and it's important to clarify that. The Commutative Property only works for addition and multiplication.
-    For example:
-    <MathJax>{"\\[10-3\\ne 3-10\\]"}</MathJax>
-    10 - 3 is 7, but 3 - 10 is -7, which is very different.
-    </p>
-    <h3>The Associative Property (Grouping Doesn't Matter)</h3>
-    <p>
-      Think
-    </p>
-  </div>
-)
-}
+  return (
+    <div>
+      <h2 id="propsOfAlg1">Basic Properties of Algebra</h2>
+      <p>
+        Algebra might seem like a bunch of rules and symbols, but at its core,
+        it follows some simple and logical patterns. These patterns are called
+        the <b>Basic Properties of Algebra</b>. They help us solve problems
+        faster and easier by showing us how numbers behave when we add,
+        multiply, and move things around. <br />
+        Think of these Properties like the rules of a game, if you understand
+        the rules, you can play smarter and solve problems without getting
+        stuck!
+      </p>
+      <h3>The Communative Property (Switching the Order)</h3>
+      <p>
+        Imagine you're holding two apples in one hand and three apples in the
+        other. No matter which hand you count first, the total is always{" "}
+        <b>five apples</b>.
+        <br />
+        This is how the Communtative Property works! It says that the order of
+        numbers doesn't matter when adding or multiplying.
+        <br />
+        <br />
+        The property is as follows:
+        <MathJax>{"\\[a+b=b+a\\]"}</MathJax>
+        For example:
+        <MathJax>{"\\[2+3=3=2\\]"}</MathJax>
+        (Both equal to 5, so the order doesn't change the answer). This property
+        also works for multiplication. The property is as follows:
+        <MathJax>{"\\[a\\times b=b\\times a\\]"}</MathJax>
+        For example:
+        <MathJax>{"\\[4\\times7=7\\times4\\]"}</MathJax>
+        (Both equal 28, so switching the order again doesn't matter)
+        <br />
+        <br />
+        Something important to note is that this does <b>NOT</b> work for
+        subtraction or division. I've seen it in the flesh and it's important to
+        clarify that. The Commutative Property only works for addition and
+        multiplication. For example:
+        <MathJax>{"\\[10-3\\ne 3-10\\]"}</MathJax>
+        10 - 3 is 7, but 3 - 10 is -7, which is very different.
+      </p>
+      <h3>The Associative Property (Grouping Doesn't Matter)</h3>
+      <p>
+        Think about how we group friends when taking a picture. Whether you
+        stand on the left or the right doesn't change who's in the picture.{" "}
+        <br />
+        <br />
+        The <b>Associative Property</b> tells us that when adding or
+        multiplying, it doesn't matter how we group the numbers, the answer will
+        still be the same!
+        <br />
+        In Addition for example:
+        <MathJax>{"\\[(a+b)+c=a+(b+c)\\]"}</MathJax>
+        An example of this is as follows:
+        <MathJax>{"\\[(2+3)+4=2+(3+4)\\]"}</MathJax>
+        Both equal 9, so grouping doesn't change the result.
+        <br />
+        In Multiplication the property looks like:
+        <MathJax>
+          {"\\[(a\\times b)\\times c = a \\times (b \\times c)\\]"}
+        </MathJax>
+        For example:
+        <MathJax>{"\\[(2\\times3)\\times4=2\\times(3\\times4)\\]"}</MathJax>
+        Both equal 24 no matter how you group them. But just like the
+        Commutative property, this property doesn't work for subtraction or
+        division. For example:
+        <MathJax>{"\\[(10-5)-2 \\ne 10-(5-2)\\]"}</MathJax>
+        One equals 3, and the other equals 7, totally different.
+      </p>
+      <h3>The Distributive Property (Sharing Numbers)</h3>
+      <p>
+        Imagine you have 3 boxes, and inside each box are 2 apples and 4
+        oranges. Instead of counting each apple and orange separately, you can
+        multiply to find the total faster. <br />
+        <br />
+        The <b>Distributive Property</b> lets us multiply a number by everything
+        inside parentheses, like this:
+        <MathJax>{"\\[a\\times(b+c)=a\\times b+a\\times c\\]"}</MathJax>
+        Most often though, you'll see the property like this:
+        <MathJax>{"\\[a(b+c)=a\\times b+a\\times c\\]"}</MathJax>
+        anything touching parentheses means it's multiplying it. You'll see this notation very commonly in Algebra 2 and- well really anything past Algebra 2. For the sake of this Algebra 1 course, we'll use the: <MathJax inline>{"\\(a\\times b\\)"}</MathJax> notation but in Algerba 2 and moving higher up, we'll use this notation: <MathJax inline>{"\\(ab\\)"}</MathJax>
+        {" "}Both mean to multiply <MathJax inline>{"\\(a\\)"}</MathJax> and <MathJax inline>{"\\(b\\)"}</MathJax>
+        <br />
+        <br />
+        An example of this property is as follows: 
+        <MathJax>{"\\[3\\times(2+4)\\]"}</MathJax>
+        We distribute the 3 to both 2 and 4:
+        <MathJax>{"\\[(3\\times2)+(3\\times4)\\]"}</MathJax>
+        <MathJax>{"\\[=6+12\\]"}</MathJax>
+        <MathJax>{"\\[=18\\]"}</MathJax>
+        This property makes math easier when working with parentheses, and it's super useful in algebra when solving equations.
+      </p>
+    </div>
+  );
+};
 
 export const IntroToAlg1 = () => {
   return (
