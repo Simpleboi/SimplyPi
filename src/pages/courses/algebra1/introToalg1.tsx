@@ -227,7 +227,14 @@ export const OrderOfOperations = () => {
         from left to right. For example:
         <MathJax>{"\\[8 \\div 2 \\times4\\]"}</MathJax>
         We go left to right, so first we divide:
-
+        <MathJax>{"\\[(8 \\div 2) \\times4\\]"}</MathJax>
+        <MathJax>{"\\[=4 \\times4\\]"}</MathJax>
+        <MathJax>{"\\[=16\\]"}</MathJax>
+        but if we multiplied first, we'd get:
+        <MathJax>{"\\[8 \\div (2 \\times4)\\]"}</MathJax>
+        <MathJax>{"\\[=8 \\div 8\\]"}</MathJax>
+        <MathJax>{"\\[=1\\]"}</MathJax>
+        That's totally wrong! So we <b>must</b> follow the order of operations from left to right when multiplication and division are both in the same equation.
       </p>
     </div>
   );
