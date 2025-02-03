@@ -335,6 +335,18 @@ export const OrderOfOperations = () => {
         <MathJax>{"\\[=17\\]"}</MathJax>
         The final answer is 17!
       </p>
+      <h3>Let's practice!</h3>
+      <p>
+        1. <MathJax inline>{"\\(8+2\\times5\\)"}</MathJax>
+        <br />
+        2. <MathJax inline>{"\\((6+4)\\div2\\)"}</MathJax>
+        <br />
+        3. <MathJax inline>{"\\(5\\times(3+7)-4)\\)"}</MathJax>
+        <br />
+        4. <MathJax inline>{"\\(12\\div(2\\times3)+1\\)"}</MathJax>
+      </p>
+      <br />
+      The answer key to the section will be in 1.4 of the answers. Click <a href="#">here</a> to go there.
     </div>
   );
 };
@@ -421,17 +433,98 @@ export const PropertiesOfAlg1 = () => {
         <MathJax>{"\\[a\\times(b+c)=a\\times b+a\\times c\\]"}</MathJax>
         Most often though, you'll see the property like this:
         <MathJax>{"\\[a(b+c)=a\\times b+a\\times c\\]"}</MathJax>
-        anything touching parentheses means it's multiplying it. You'll see this notation very commonly in Algebra 2 and- well really anything past Algebra 2. For the sake of this Algebra 1 course, we'll use the: <MathJax inline>{"\\(a\\times b\\)"}</MathJax> notation but in Algerba 2 and moving higher up, we'll use this notation: <MathJax inline>{"\\(ab\\)"}</MathJax>
-        {" "}Both mean to multiply <MathJax inline>{"\\(a\\)"}</MathJax> and <MathJax inline>{"\\(b\\)"}</MathJax>
+        anything touching parentheses means it's multiplying it. You'll see this
+        notation very commonly in Algebra 2 and- well really anything past
+        Algebra 2. For the sake of this Algebra 1 course, we'll use the:{" "}
+        <MathJax inline>{"\\(a\\times b\\)"}</MathJax> notation but in Algerba 2
+        and moving higher up, we'll use this notation:{" "}
+        <MathJax inline>{"\\(ab\\)"}</MathJax> Both mean to multiply{" "}
+        <MathJax inline>{"\\(a\\)"}</MathJax> and{" "}
+        <MathJax inline>{"\\(b\\)"}</MathJax>
         <br />
         <br />
-        An example of this property is as follows: 
+        An example of this property is as follows:
         <MathJax>{"\\[3\\times(2+4)\\]"}</MathJax>
         We distribute the 3 to both 2 and 4:
         <MathJax>{"\\[(3\\times2)+(3\\times4)\\]"}</MathJax>
         <MathJax>{"\\[=6+12\\]"}</MathJax>
         <MathJax>{"\\[=18\\]"}</MathJax>
-        This property makes math easier when working with parentheses, and it's super useful in algebra when solving equations.
+        This property makes math easier when working with parentheses, and it's
+        super useful in algebra when solving equations.
+      </p>
+      <h3>The Identity Properties (Numbers That Don't Change Anything)</h3>
+      <p>
+        Some numbers are like "quiet players" in math, they don't change
+        anything when added or multiplied. <br />
+        In Addition, we have:
+        <MathJax>{"\\[a+0=a\\]"}</MathJax>
+        an example of this is:
+        <MathJax>{"\\[5+0=0\\]"}</MathJax>
+        Adding zero doesn't change the number itself. In multiplication, we
+        have:
+        <MathJax>{"\\[a\\times1=a\\]"}</MathJax>
+        An example of this is:
+        <MathJax>{"\\[7\\times1=7\\]"}</MathJax>
+        Multiplying by 1 keeps the number the same. These properties help us
+        simplify math problems faster without changing the answer.
+      </p>
+      <h3>The Inverse Properties (Undoing a Number)</h3>
+      <p>
+        The Inverse Property is like pressing "undo" in math, it helps us cancel
+        out numbers! <br />
+        The Inverse Property of Addition is:
+        <MathJax>{"\\[a+(-a)=0\\]"}</MathJax>
+        For example:
+        <MathJax>{"\\[8+(-8)=0\\]"}</MathJax>
+        Adding a number and its opposite cancels them out!
+        <br />
+        <br />
+        The Inverse Property of Multiplication is:
+        <MathJax>{"\\[a\\times \\frac{1}{a}=1\\]"}</MathJax>
+        For example:
+        <MathJax>{"\\[5\\times \\frac{1}{5}=1\\]"}</MathJax>
+        Multiplying by the reciprocal cancels the number out!
+        <br />
+        <br />
+        These properties are really important when solving algebraic equations
+        because they help us get rid of extra numbers to find the value of a
+        variable.
+      </p>
+      <h3>Why Do These Properties Matter?</h3>
+      <p>
+        Math might seem like magic, but it's not random (unless you're in
+        stats), it follows logical patterns. These basic properties make math
+        consistent and predictable, so no matter who solves a problem, they'll
+        always get the same answer if they follow the rules!
+        <br />
+        <br />
+        Once you recognize these properties, you'll start seeing them everywhere
+        in algebra. They make math way easier and help us build bigger ideas
+        later on, like solving equations and graphing functions!
+        <br />
+        <br />
+        The Basic Properties of Algebra are like math shortcuts that help us
+        solve problems more easily and logically.
+        <ul>
+          <br />
+          The <b>Commutative Property</b> lets us swap numbers in addition and
+          multiplication.
+          <br />
+          The <b>Associative Property</b> lets us change how we group numbers
+          without changing the answer.
+          <br />
+          The <b>Distributive Property</b> helps us break down parentheses when
+          multiplying.
+          <br />
+          The <b>Identity Properties</b> tell us which numbers don't change
+          anything.
+          <br />
+          The <b>Inverse Properties</b> let us cancel things out to simplify
+          equations.
+          <br />
+        </ul>
+        Understanding these rules make algebra easier and helps you build a
+        strong foundation for more advanced math!
       </p>
     </div>
   );
