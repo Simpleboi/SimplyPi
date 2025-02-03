@@ -129,8 +129,49 @@ export const WhatIsAlgebra1 = () => {
         puzzles, find patterns, and understand how things work in the real
         world. So, don't worry if algebra feels tricky at first. Just remember,
         it's all about finding missing numbers and solving problems in a smart
-        way. Once you get the hang of it, you'll start seeing it everywhere, from
-        video games to science experiments to everyday life.
+        way. Once you get the hang of it, you'll start seeing it everywhere,
+        from video games to science experiments to everyday life.
+      </p>
+      <br />
+    </div>
+  );
+};
+
+export const OrderOfOperations = () => {
+  return (
+    <div>
+      <h2>Order of Operations</h2>
+      <p>
+        Math can be tricky when you see a big problem with a bunch of numbers,
+        parentheses, and different symbols. If you don't follow the right steps,
+        you might get the wrong answer! That's why we use something called{" "}
+        <b>Order of Operations</b>, which is a set of rules that tells us what
+        to solve first.
+      </p>
+      <br />
+      You can remember the order with the word PEMDAS:
+      <br />
+      <ul>
+        <p>P - Parentheses</p>
+        <p>E - Exponents</p>
+        <p>M - Multiplication</p>
+        <p>D - Division</p>
+        <p>A - Addition</p>
+        <p>S - Subtraction</p>
+      </ul>
+      <p>
+        Each letter tells us{" "}
+        <i>which part of the math problem to solve first</i> so we don't get
+        mixed up. Let's break each of these down step-by-step.
+      </p>
+      <h3>Step 1: Parentheses (P)</h3>
+      <p>
+        If there are parentheses () in the problem, we <i>always</i> start
+        there. Parentheses group numbers together to tell us what needs to be done first. For example:
+        <MathJax>{"\\[(2 + 3 )*4\\]"}</MathJax>
+        Here, we solve 2 + 3 first because it's inside the parentheses. That gives us: 
+        <MathJax>{"\\[5 * 4\\]"}</MathJax>
+        Without parentheses, the answer might be different! That's why it's <b>so important</b> to check for parentheses first before doing anything else.
       </p>
     </div>
   );
@@ -143,6 +184,8 @@ export const IntroToAlg1 = () => {
         <hr />
         <h2>Introduction to Algebra 1</h2>
         <WhatIsAlgebra1 />
+        <hr />
+        <OrderOfOperations />
       </section>
     </MathJaxContext>
   );
