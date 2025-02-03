@@ -1,6 +1,5 @@
 import { useParams } from "react-router-dom";
-// import { courses } from "../data/courseData";
-import { Alg1 } from "./courses/algebra1";
+import { Alg1 } from "./courses/algebra1/algebra1";
 
 // Mapping course IDs to their respective components
 const courseComponents: { [key: string]: React.FC } = {

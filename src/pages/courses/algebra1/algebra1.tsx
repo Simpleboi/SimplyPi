@@ -1,6 +1,6 @@
-import "../../styles/courses/algebra1.scss";
-// import { GraphingCalculator } from "../../ui/GraphingCalculator";
-import { CourseHeader } from "../../ui/CourseHeader";
+import "../../../styles/courses/algebra1.scss";
+import { CourseHeader } from "../../../ui/CourseHeader";
+import { IntroToAlg1 } from "./introToalg1";
 
 export const Alg1ContentOfTables = () => {
   return (
@@ -153,6 +153,7 @@ export const Alg1 = () => {
       <hr />
       <p>Last Updated: 01/31/25</p>
       <Alg1ContentOfTables />
+      <IntroToAlg1 />
     </section>
   );
 };
