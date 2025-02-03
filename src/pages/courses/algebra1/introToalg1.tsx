@@ -91,7 +91,46 @@ export const WhatIsAlgebra1 = () => {
         with equations in a clear and structured way.
         <br />
         <br />
-        As time went on, European mathematicians built on these ideas. During the Renasissance, math geniuses like François Viète and René Descartes helped make algebra look more like what we see in textbooks today. They introduced symbols like <MathJax inline>{"\\(x, y\\)"}</MathJax> and =, which made equations much easier to write and understand.
+        As time went on, European mathematicians built on these ideas. During
+        the Renasissance, math geniuses like François Viète and René Descartes
+        helped make algebra look more like what we see in textbooks today. They
+        introduced symbols like <MathJax inline>{"\\(x, y\\)"}</MathJax> and =,
+        which made equations much easier to write and understand.
+      </p>
+      <h3>Why Do We Use Algebra?</h3>
+      <p>
+        Algebra isn't just something you learn in school, it's used everywhere
+        in real life. Scientists use algebra to calculate things like speed,
+        gravity, and chemical reactions. Engineers use it to design bridges,
+        buildings, and machines. Computer programmers use algebra to make apps,
+        video games, and websites work{" "}
+        <i>
+          ("I used algebra to build SimplyPi, the website you're reading this
+          on" - Nate)
+        </i>
+        . Even businesses use algebra to figure out profits, costs, and prices.
+        Think about when you go shopping. Let's say you have $20, and you want
+        to buy some snacks. If each snack costs $3, you can use algebra to
+        figure out how many snacks you can buy. The equation would look
+        something like this:
+        <MathJax>{"\\[3x=20\\]"}</MathJax>
+        Here, <MathJax inline>{"\\(x\\)"}</MathJax> is the number of snacks you
+        can buy. When we solve for <MathJax inline>{"\\(x\\)"}</MathJax>, we
+        find that <MathJax inline>{"\\(x=6\\)"}</MathJax> with some money left
+        over. That's algebra in action! Even if you don't realize it, you're
+        already using algebra every day. Whenever you figure out how much time
+        you need to get ready in the morning, split a bill with friends, or
+        adjust a recipe when cooking, you're using algebraic thinking.
+        <br />
+        <br />
+        At first, algebra might seem like a bunch of confusing letters and
+        numbers, but once you start seeing how it works, it's like unlocking a
+        secret code that makes math easier and more powerful. It helps us solve
+        puzzles, find patterns, and understand how things work in the real
+        world. So, don't worry if algebra feels tricky at first. Just remember,
+        it's all about finding missing numbers and solving problems in a smart
+        way. Once you get the hang of it, you'll start seeing it everywhere, from
+        video games to science experiments to everyday life.
       </p>
     </div>
   );
