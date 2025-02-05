@@ -2,6 +2,7 @@ import "../../../styles/courses/algebra1.scss";
 import { CourseHeader } from "../../../ui/CourseHeader";
 import { IntroToAlg1 } from "./introToalg1";
 import { ExpressAndEq } from "./expressAndEq";
+import { ExponentsAndRadicals } from "./exponAndRadicals";
 
 export const Alg1ContentOfTables = () => {
   return (
@@ -92,7 +93,7 @@ export const Alg1ContentOfTables = () => {
       </details>
       <details>
         <summary>📊 Exponents & Radicals</summary>
-        <a href="#">Rules of Exponents</a>
+        <a href="#exponents">Rules of Exponents</a>
         <br />
         <a href="#">Negative & Zero Exponents</a>
         <br />
@@ -173,6 +174,7 @@ export const Alg1 = () => {
       <br />
       <IntroToAlg1 />
       <ExpressAndEq />
+      <ExponentsAndRadicals />
     </section>
   );
 };
