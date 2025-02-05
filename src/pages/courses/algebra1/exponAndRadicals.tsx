@@ -25,7 +25,47 @@ export const RulesOfExponents = () => {
         A <b>radical</b> is the opposite of an exponent. While an exponent multiplies a number repeatedly, a radical undoes that multiplication. 
         <br />
         <br />
-        The most common way
+        The most common radical you'll see is the square root (<MathJax inline>{"\\(\\sqrt{x}\\)"}</MathJax>), which tells us <b>what number multiplies by itself to get the given number</b>.
+        <br />For example:
+        <MathJax>{"\\[\\sqrt{25}=5\\]"}</MathJax>
+        (Because 5 times 5 is 25.)
+        <br />
+        <br />
+        Just like with exponents, we have rules for working with radicals, including: <a href="#">Simplifying Radicals</a>(Making them easier to work with), <a href="#">Multiplyinng & Dividing Radicals</a>, and <a href="#">How Radicals and Exponetns are Connected</a>. Click on the topic you wish to explore further. 
+      </p>
+      <br />
+      <hr />
+      <h2>Rules of Exponents</h2>
+      <p>
+        Exponents are a <b>shortcut for repeated multiplciation</b>. Instead of writing <MathJax inline>{"\\(3\\times3\\times3\\times3\\)"}</MathJax>, we write <MathJax inline>{"\\(3^4\\)"}</MathJax>, which means "multiply 3 by itself four times". 
+        <br />
+        <br />
+        But when we multiply or divide, or raise exponents to powers, there are special rules to follow. These rules help us <b>simplify expressions quickly without writing long multiplciations</b>. Let's go over them!
+      </p>
+      <h3>The Product Rule</h3>
+      <p>
+        When you multiply <b>two numbers with the same base</b>, add the exponents. 
+        <MathJax>{"\\[a^m\\times a^n=a^{m+n}\\]"}</MathJax>
+        For example:
+        <MathJax>{"\\[2^3\\times2^4\\]"}</MathJax>
+        Since the base is the same (2), we add the exponents:
+        <MathJax>{"\\[2^3\\times2^4\\]"}</MathJax>
+        <MathJax>{"\\[=2^{3+4}\\]"}</MathJax>
+        <MathJax>{"\\[=2^{7}\\]"}</MathJax>
+        <MathJax>{"\\[=128\\]"}</MathJax>
+        Here's another example:
+        <MathJax>{"\\[x^5\\times x^2\\]"}</MathJax>
+        Since they have the same base (x), we add the exponents:
+        <MathJax>{"\\[x^5\\times x^2\\]"}</MathJax>
+        <MathJax>{"\\[=x^{5+2}\\]"}</MathJax>
+        <MathJax>{"\\[=x^{7}\\]"}</MathJax>
+        <b>Why do we do this?</b> <br />Let's think about it for a second. Let's say we have: <MathJax inline>{"\\(2^3\\times2^4\\)"}</MathJax> for example. If we write this out:
+        <MathJax>{"\\[(2\\times2\\times2)\\times(2\\times2\\times2\\times2)\\]"}</MathJax>
+        Since we are multiplying seven total 2's, we can just add the exponents instead of writing them all out!
+        <MathJax>{"\\[(2\\times2\\times2)\\times(2\\times2\\times2\\times2)\\]"}</MathJax>
+        <MathJax>{"\\[=2\\times2\\times2\\times2\\times2\\times2\\times2\\]"}</MathJax>
+        <MathJax>{"\\[=2^7\\]"}</MathJax>
+        And this is why we use this rule!
       </p>
     </div>
   );
