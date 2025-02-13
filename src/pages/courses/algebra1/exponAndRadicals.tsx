@@ -200,21 +200,95 @@ export const RulesOfExponents = () => {
       <p>
         Any number (except 0) raised to the power of 1.{" "}
         <MathJax>{"\\[a^0=1\\]"}</MathJax>
-        Where{" "}
-        <MathJax inline>{"\\(a\\)"}</MathJax>
-          {" "}is not<MathJax inline>{"\\(0\\)"}</MathJax>{" "}
-          Example 1:
-          <MathJax>{"\\[5^0=1\\]"}</MathJax>
-          Example 2:
-          <MathJax>{"\\[1000^0=1\\]"}</MathJax>
-          Example 3:
-          <MathJax>{"\\[x^0=1\\]"}</MathJax>
-          <h4>But why does the power of 0 equal 1?</h4>
-          <br />
-          This actually comes from the quotient rule:
-          <MathJax>{"\\[a^m\\div a^m=a^{m-m}=a^0\\]"}</MathJax>
-          Since any number divided by itself is 1, we get:
-          <MathJax>{"\\[a^0=1\\]"}</MathJax>
+        Where <MathJax inline>{"\\(a\\)"}</MathJax> is not
+        <MathJax inline>{"\\(0\\)"}</MathJax> Example 1:
+        <MathJax>{"\\[5^0=1\\]"}</MathJax>
+        Example 2:
+        <MathJax>{"\\[1000^0=1\\]"}</MathJax>
+        Example 3:
+        <MathJax>{"\\[x^0=1\\]"}</MathJax>
+        <h4>But why does the power of 0 equal 1?</h4>
+        <br />
+        This actually comes from the quotient rule:
+        <MathJax>{"\\[a^m\\div a^m=a^{m-m}=a^0\\]"}</MathJax>
+        Since any number divided by itself is 1, we get:
+        <MathJax>{"\\[a^0=1\\]"}</MathJax>
+        <h3>The Negative Exponent Rule</h3>
+        <p>
+          A <b>negative exponent</b> means "flip the base to the denominator."
+        </p>
+        <MathJax>{"\\[a^{-n}\\]"}</MathJax>
+        <MathJax>{"\\[=\\frac{1}{a^n}\\]"}</MathJax>
+        Example 1:
+        <MathJax>{"\\[5^{-2}\\]"}</MathJax>
+        <MathJax>{"\\[=\\frac{1}{5^2}\\]"}</MathJax>
+        <MathJax>{"\\[=\\frac{1}{25}\\]"}</MathJax>
+        Example 2:
+        <MathJax>{"\\[x^{-3}\\]"}</MathJax>
+        <MathJax>{"\\[=\\frac{1}{x^3}\\]"}</MathJax>
+        <h4>Why do we flip the base of the exponent?</h4>
+        <br />
+        Negative exponents come from the quotient rule, we see:
+        <MathJax>{"\\[\\frac{5^0}{5^2}\\]"}</MathJax>
+        <MathJax>{"\\[=5^{0-2}\\]"}</MathJax>
+        <MathJax>{"\\[=5^{-2}\\]"}</MathJax>
+        <MathJax>{"\\[=\\frac{1}{5^2}\\]"}</MathJax>
+        Negative exponents just move the base to the bottom to make it positive.
+      </p>
+      <h3>The Fractional Exponent Rule</h3>
+      <p>
+        A <b>fractional exponent</b>means the <b>root of a number</b>
+        <MathJax>{"\\[a^{\\frac{1}{n}}\\]"}</MathJax>
+        <MathJax>{"\\[=\\sqrt[n]{a}\\]"}</MathJax>
+        Example 1:
+        <MathJax>{"\\[9^{\\frac{1}{2}}\\]"}</MathJax>
+        <MathJax>{"\\[=\\sqrt[3]{27}\\]"}</MathJax>
+        <MathJax>{"\\[=3\\]"}</MathJax>
+      </p>
+      <h3>Quick Recap</h3>
+      <p>
+        1. <b>Product Rule</b> - Add exponents when multiplying:
+        <MathJax>{"\\[a^m \\times a^n = a^{m+n}\\]"}</MathJax>
+        <br />
+        2. <b>Quotient Rule</b> - Subtract exponents when multiplying:
+        <MathJax>{"\\[a^m \\div a^n = a^{m-n}\\]"}</MathJax>
+        <br />
+        3. <b>Power Rule</b> - Multiply exponents when raising a power:
+        <MathJax>{"\\[(a^m)^n = a^{m \\times n}\\]"}</MathJax>
+        4. <b>Zero Exponent Rule</b> - Any number to a power of 0 is 1:
+        <MathJax>{"\\[a^0 = 1\\]"}</MathJax>
+        <br />
+        5. <b>Negative Exponent Rule</b> - Flip the base to make the exponent positive:
+        <MathJax>{"\\[a^{-1} = \\frac{1}{a^n}\\]"}</MathJax>
+        <br />
+        6. <b>Fractional Exponent Rule</b> - a fractional exponent means a root:
+        <MathJax>{"\\[a^{\\frac{1}{n}} = \\sqrt[n]{a}\\]"}</MathJax>
+        <br />
+      </p>
+      <h3 style={{ textAlign: "center" }}>Practice Problems</h3>
+      <p>
+        1. <MathJax inline>{"\\(4^2 \\times 4^3\\)"}</MathJax>
+        <br />
+        2. <MathJax inline>{"\\((x^5 \\div x^2)\\)"}</MathJax>
+        <br />
+        3. <MathJax inline>{"\\((y^3)^4\\)"}</MathJax>
+        <br />
+        4. <MathJax inline>{"\\(2^0\\)"}</MathJax>
+        <br />
+        5. <MathJax inline>{"\\(7^{-2}\\)"}</MathJax>
+        <br />
+        6. <MathJax inline>{"\\(125^{(\\frac{1}{3})}\\)"}</MathJax>
+        <br />
+        7. <MathJax inline>{"\\((3^2)^3\\)"}</MathJax>
+        <br />
+        8. <MathJax inline>{"\\((x^2 \\times x^3) \\div x^4\\)"}</MathJax>
+        <br />
+        9. <MathJax inline>{"\\(16^{\\frac{3}{4}}\\)"}</MathJax>
+        <br />
+        10. <MathJax inline>{"\\((8^{-1}+2^{-2})\\times 4^3\\)"}</MathJax>
+        <br />
+        <br />
+        Mastering these rules makes algebra way easier!
       </p>
     </div>
   );
