@@ -185,11 +185,36 @@ export const RulesOfExponents = () => {
         <MathJax>{"\\[=x^{15}\\]"}</MathJax>
         <h4>Why do we multiply the exponents?</h4>
         <br />
-        When we see: 
+        When we see:
         <MathJax>{"\\[(2^2)^4\\]"}</MathJax>
         This really says:
-        <MathJax>{"\\[(2\\times2)\\times(2\\times2)\\times(2\\times2)\\times(2\\times2)\\]"}</MathJax>
-        We multiplied two 2's four times, so we just multiply <MathJax inline>{"\\(2\\times4=8\\)"}</MathJax> instead!
+        <MathJax>
+          {
+            "\\[(2\\times2)\\times(2\\times2)\\times(2\\times2)\\times(2\\times2)\\]"
+          }
+        </MathJax>
+        We multiplied two 2's four times, so we just multiply{" "}
+        <MathJax inline>{"\\(2\\times4=8\\)"}</MathJax> instead!
+      </p>
+      <h3>The Zero Exponent Rule</h3>
+      <p>
+        Any number (except 0) raised to the power of 1.{" "}
+        <MathJax>{"\\[a^0=1\\]"}</MathJax>
+        Where{" "}
+        <MathJax inline>{"\\(a\\)"}</MathJax>
+          {" "}is not<MathJax inline>{"\\(0\\)"}</MathJax>{" "}
+          Example 1:
+          <MathJax>{"\\[5^0=1\\]"}</MathJax>
+          Example 2:
+          <MathJax>{"\\[1000^0=1\\]"}</MathJax>
+          Example 3:
+          <MathJax>{"\\[x^0=1\\]"}</MathJax>
+          <h4>But why does the power of 0 equal 1?</h4>
+          <br />
+          This actually comes from the quotient rule:
+          <MathJax>{"\\[a^m\\div a^m=a^{m-m}=a^0\\]"}</MathJax>
+          Since any number divided by itself is 1, we get:
+          <MathJax>{"\\[a^0=1\\]"}</MathJax>
       </p>
     </div>
   );
