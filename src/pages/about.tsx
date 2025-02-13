@@ -60,7 +60,7 @@ export const About = () => {
         <i>for students, by students</i>. I don't know everything and I
         encourage those to help add on to this vision. Whether you're here to
         learn, teach, or contribute, you're part of something bigger, a movement
-        to make learning simple, fun, and available to all.
+        to make learning simple, fun, and available to all. I'd also like to thank a very special person named Haley Baugh, without her support in this project, I wouldn't have gone very far with <span>SimplyPi</span>. Thank you most of all {"<3"}.
       </p>
       <h3>-Nate</h3>
       <figure className="logo">

@@ -7,7 +7,7 @@ import { ExponentsAndRadicals } from "./exponAndRadicals";
 export const Alg1ContentOfTables = () => {
   return (
     <section className="alg1-toc">
-      <h2>Table of Contents</h2>
+      <h2 id="tocalg1">Table of Contents</h2>
       <details>
         <summary>📖Introduction to Algebra 1</summary>
         <a href="#whatIsAlgebra1">What is Algebra?</a>
@@ -135,6 +135,16 @@ export const Alg1ContentOfTables = () => {
   );
 };
 
+export const BackToTop = () => {
+  return (
+    <div className="Back-to-top">
+      <a href="#tocalg1">
+        Back to Top <i className="bx bx-up-arrow-alt"></i>
+      </a>
+    </div>
+  );
+};
+
 export const Alg1Resources = () => {
   const alg1pdfUrl =
     "https://hillcrestmath.wordpress.com/wp-content/uploads/2010/08/8th-grade-algebra-i-textbook.pdf";
@@ -155,6 +165,7 @@ export const Alg1Resources = () => {
 export const Alg1 = () => {
   return (
     <section className="algebra-1">
+      <BackToTop />
       <CourseHeader title="Algebra 1"></CourseHeader>
       <Alg1Resources />
       <hr />
