@@ -165,7 +165,31 @@ export const RulesOfExponents = () => {
         base! instead of writing out all the multiplciation, we use the
         shortcut:
         <MathJax>{"\\[a^m \\div a^n = a^{m-n}\\]"}</MathJax>
-        This rule makes calculations with exponents a lot easer, espeically in harder math.
+        This rule makes calculations with exponents a lot easer, espeically in
+        harder math.
+      </p>
+      <h3>The Power Rule (Power to a Power)</h3>
+      <p>
+        When raising an exponent to another exponent, multiply the exponents.
+        <MathJax>{"\\[(a^m)^n=a^{m\\times n}\\]"}</MathJax>
+        Example 1:
+        <MathJax>{"\\[(3^2)^4\\]"}</MathJax>
+        Multiply the exponents:
+        <MathJax>{"\\[3^{2\\times4}\\]"}</MathJax>
+        <MathJax>{"\\[=3^8\\]"}</MathJax>
+        <MathJax>{"\\[=6,561\\]"}</MathJax>
+        Example 2:
+        <MathJax>{"\\[(x^3)^5\\]"}</MathJax>
+        Multiply the exponents:
+        <MathJax>{"\\[x^{3\\times5}\\]"}</MathJax>
+        <MathJax>{"\\[=x^{15}\\]"}</MathJax>
+        <h4>Why do we multiply the exponents?</h4>
+        <br />
+        When we see: 
+        <MathJax>{"\\[(2^2)^4\\]"}</MathJax>
+        This really says:
+        <MathJax>{"\\[(2\\times2)\\times(2\\times2)\\times(2\\times2)\\times(2\\times2)\\]"}</MathJax>
+        We multiplied two 2's four times, so we just multiply <MathJax inline>{"\\(2\\times4=8\\)"}</MathJax> instead!
       </p>
     </div>
   );
