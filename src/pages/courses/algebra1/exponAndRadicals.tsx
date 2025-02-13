@@ -258,7 +258,8 @@ export const RulesOfExponents = () => {
         4. <b>Zero Exponent Rule</b> - Any number to a power of 0 is 1:
         <MathJax>{"\\[a^0 = 1\\]"}</MathJax>
         <br />
-        5. <b>Negative Exponent Rule</b> - Flip the base to make the exponent positive:
+        5. <b>Negative Exponent Rule</b> - Flip the base to make the exponent
+        positive:
         <MathJax>{"\\[a^{-1} = \\frac{1}{a^n}\\]"}</MathJax>
         <br />
         6. <b>Fractional Exponent Rule</b> - a fractional exponent means a root:
@@ -294,6 +295,83 @@ export const RulesOfExponents = () => {
   );
 };
 
+export const NegativeAndZeroExp = () => {
+  return (
+    <div id="neg&zeroexp">
+      <br />
+      <hr />
+      <h2>Negative & Zero Exponents</h2>
+      <p>
+        Let's talk about negative exponents. If you see something like{" "}
+        <MathJax inline>{"\\(5^{-2}\\)"}</MathJax>, don't worry! A{" "}
+        <b>negative exponent</b> doesn't mean the number is negative, it just
+        means we flip the base to the bottom (reciprocal).
+        <br />
+        The rule is:
+        <MathJax>{"\\[a^{-1}=\\frac{1}{a^n}\\]"}</MathJax>
+        Example 1:
+        <MathJax>{"\\[5^{-2}=\\frac{1}{5^2}\\]"}</MathJax>
+        <MathJax>{"\\[=\\frac{1}{25}\\]"}</MathJax>
+        Example 2:
+        <MathJax>{"\\[x^{-3}=\\frac{1}{x^3}\\]"}</MathJax>A negative exponent
+        tells us to flip the number to the denominator (bottom of a fraction)
+        and make the exponent positive.
+      </p>
+      <br />
+      <h4>Why do Negative Exponents Work This Way?</h4>
+      <p>
+        We can prove this using the <b>quotient rule</b> again:
+        <br />
+        Let's divide:
+        <MathJax>{"\\[\\frac{5^2}{5^5}\\]"}</MathJax>
+        Using the quotient exponent rule:
+        <MathJax>{"\\[5^{2-5}=5^{-3}\\]"}</MathJax>
+        Now, let's expand it:
+        <MathJax>
+          {
+            "\\[\\frac{5 \\times 5}{5 \\times 5 \\times 5 \\times 5\\times 5}\\]"
+          }
+        </MathJax>
+        If we cancel out the two 5's from the bottom and top:
+        <MathJax>{"\\[\\frac{1}{5 \\times 5 \\times 5}\\]"}</MathJax>
+        <MathJax>{"\\[=\\frac{1}{5^3}\\]"}</MathJax>
+        So, we can say that <MathJax inline>{"\\(5^{-3}\\)"}</MathJax> is equal
+        to:
+        <MathJax>{"\\[\\frac{1}{5^3}\\]"}</MathJax>
+        This proves that a negative exponent means we take the reciprocal (flip
+        it to the denominator).
+      </p>
+      <h3>The Zero Exponent</h3>
+      <p>
+        There's a special rule in exponents that says:
+        <MathJax>{"\\[a^0 = 1\\]"}</MathJax>
+        where <MathJax inline>{"\\(a\\)"}</MathJax>
+        is any number except 0.
+        <br />
+        <br />
+        This means:
+        <MathJax>{"\\[5^0=1, 100^0=1, x^0=1\\]"}</MathJax>
+        But <b>why</b> does this happen? Let's prove it using the quotient rule
+        of exponents:
+        <br />
+        We know that when dividing exponents with the same base, we subtract the
+        exponents:
+        <MathJax inline>{"\\(5^3 \\div 5^3\\)"}</MathJax>:
+        <MathJax>{"\\[\\frac{5^3}{5^3}\\]"}</MathJax>
+        <MathJax>{"\\[=5^{3-3}\\]"}</MathJax>
+        <MathJax>{"\\[=5^{0}\\]"}</MathJax>
+        but wait, what is any number divided by itself?
+        <MathJax>{"\\[\\frac{5^3}{5^3}=1\\]"}</MathJax>
+        So that means:
+        <MathJax>{"\\[5^0 = 1\\]"}</MathJax>
+        This works for any number:
+        <MathJax>{"\\[100^0 = 1, x^0=1\\]"}</MathJax>
+        The key idea is that the zero exponent rule comes from the concept that dividing two identical powers cancels everything out, leaving just 1!
+      </p>
+    </div>
+  );
+};
+
 export const ExponentsAndRadicals = () => {
   return (
     <MathJaxContext>
@@ -301,6 +379,7 @@ export const ExponentsAndRadicals = () => {
         <hr />
         <h2>Exponents & Radicals</h2>
         <RulesOfExponents />
+        <NegativeAndZeroExp />
       </section>
     </MathJaxContext>
   );

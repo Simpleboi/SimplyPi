@@ -95,7 +95,7 @@ export const Alg1ContentOfTables = () => {
         <summary>📊 Exponents & Radicals</summary>
         <a href="#exponents">Rules of Exponents</a>
         <br />
-        <a href="#">Negative & Zero Exponents</a>
+        <a href="#neg&zeroexp">Negative & Zero Exponents</a>
         <br />
         <a href="#">Scientific Notation & Applications</a>
         <br />
